@@ -1,0 +1,172 @@
+{
+  "nav": {
+    "about": "About",
+    "projects": "Projects",
+    "contact": "Contact",
+    "now": "Now",
+    "hero": "Hero",
+    "quickstats": "Quick Stats",
+    "highlights": "Highlights",
+    "stack": "Stack",
+    "building": "Building",
+    "learning": "Learning"
+  },
+  "hero": {
+    "badge": "Available for freelance projects",
+    "title": "Building software,\nautomation and\ndigital products.",
+    "subtitle": "Full Stack Developer, QA Automation Engineer and Data Analyst with 15+ years of experience.",
+    "cta": {
+      "viewProjects": "View Projects",
+      "contact": "Contact"
+    }
+  },
+  "header": {
+    "name": "Diego Graf"
+  },
+  "about": {
+    "section": "ABOUT",
+    "title": "More than code.",
+    "content": "I'm a software developer with experience across\nFull Stack Development, QA Automation,\nBusiness Intelligence and Mobile Applications.\n\nThroughout my career I've worked in banking,\nhealthcare, government institutions and\ncommercial platforms, helping teams build\nreliable software and improve processes through\nautomation.\n\nToday I'm focused on creating useful products,\nlearning continuously and leveraging AI-assisted\ndevelopment to build faster and smarter."
+  },
+  "stack": {
+    "section": "STACK",
+    "title": "Technologies I work with.",
+    "items": [
+      "React",
+      "TypeScript",
+      "Node.js",
+      "MongoDB",
+      "PostgreSQL",
+      "MySQL",
+      "PHP",
+      "Cypress",
+      "Jenkins",
+      "Git",
+      "Linux",
+      "Docker",
+      "Javascript",
+      "HTML",
+      "CSS",
+      "Tailwind",
+      "Nest.js",
+      "Express.js",
+      "Android",
+      "Django",
+      "Excel",
+      "Sap Business Objects",
+      "VBA Macros",
+      "Access",
+      "Cursor",
+      "Java"
+    ]
+  },
+  "highlights": {
+    "stats": [
+      {
+        "value": "15+",
+        "label": "Years Experience"
+      },
+      {
+        "value": "3",
+        "label": "Profesional Areas"
+      },
+      {
+        "value": "20+",
+        "label": "Technologies Used Professionally"
+      },
+      {
+        "value": "∞",
+        "label": "Continuous Learning"
+      }
+    ]
+  },
+  "quickstats": {
+    "stats": [
+      {
+        "value": "15+",
+        "label": "Years Experience"
+      },
+      {
+        "value": "20+",
+        "label": "Projects"
+      },
+      {
+        "value": "4",
+        "label": "Domains"
+      },
+      {
+        "value": "∞",
+        "label": "Learning"
+      }
+    ]
+  },
+  "building": {
+    "section": "CURRENTLY BUILDING",
+    "title": "Products and ideas in progress.",
+    "description": "A collection of projects I'm actively building, validating and improving."
+  },
+  "projects": {
+    "section": "PROJECTS",
+    "title": "Featured work.",
+    "activeBadge": "Active Project",
+    "sourceCode": "Source Code",
+    "liveDemo": "Live Demo",
+    "items": {
+      "studyTracker": {
+        "title": "Study Tracker",
+        "description": "Personal learning management platform designed to organize study plans, track progress, manage topics and measure learning goals. Built with React, Node.js and MongoDB, following a modern full-stack architecture.",
+        "status": "Active Development"
+      },
+      "carMaintenance": {
+        "title": "Car Maintenance Tracker",
+        "description": "Vehicle maintenance scheduling and mileage tracking.",
+        "status": "Research"
+      },
+      "pfComparer": {
+        "title": "PF Comparer",
+        "description": "Android mobile app for comparing deposit certificates in different banks.",
+        "status": "Backend Active Development"
+      }
+    }
+  },
+  "learning": {
+    "section": "CURRENTLY LEARNING",
+    "title": "Continuous learning.",
+    "description": "Technologies, methodologies and concepts I'm actively studying and experimenting with.",
+    "progressLabel": "Progress",
+    "items": {
+      "dockerKubernetes": {
+        "title": "Docker & Kubernetes",
+        "category": "DevOps"
+      },
+      "modernReactPatterns": {
+        "title": "Modern React Patterns",
+        "category": "Frontend"
+      },
+      "aiAgentsAutomation": {
+        "title": "AI Agents & Automation",
+        "category": "AI"
+      }
+    }
+  },
+  "now": {
+    "section": "NOW",
+    "title": "What I'm working on.",
+    "items": [
+      "Building Study Tracker",
+      "Learning AI-assisted development",
+      "Improving Docker and deployment skills"
+    ]
+  },
+  "contact": {
+    "section": "CONTACT",
+    "title": "Let's build something together.",
+    "description": "Feel free to reach out if you want to discuss software development, automation, data analysis or potential collaborations.",
+    "emailLabel": "Email",
+    "emailHref": "mailto:graf.drg@gmail.com",
+    "linkedInLabel": "LinkedIn",
+    "linkedInHref": "https://www.linkedin.com/in/diegograf/",
+    "githubLabel": "GitHub",
+    "githubHref": "https://github.com/diegorafaelgraf"
+  }
+}

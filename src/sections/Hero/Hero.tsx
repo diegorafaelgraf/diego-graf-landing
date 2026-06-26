@@ -1,0 +1,80 @@
+import { FaLinkedin, FaGithub, FaMailBulk } from 'react-icons/fa';
+import { motion } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
+
+import profile from '../../assets/images/profile.jpg';
+
+export default function Hero() {
+  const { t } = useTranslation();
+  return (
+    <section
+      id="hero"
+      className="mx-auto flex min-h-[90vh] max-w-6xl flex-col items-center justify-center gap-12 px-6 md:flex-row"
+    >
+      <motion.div
+        initial={{ opacity: 0, y: 25 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6 }}
+        className="flex-1"
+      >
+        <span className="rounded-full border border-zinc-700 px-4 py-1 text-sm text-zinc-400">
+          {t('hero.badge')}
+        </span>
+
+        <h1 className="mt-6 text-5xl font-bold leading-tight md:text-7xl">
+          {t('hero.title').split('\n').map((line, idx) => (
+            <span key={idx}>
+              {line}
+              <br />
+            </span>
+          ))}
+        </h1>
+
+        <p className="mt-6 max-w-xl text-lg text-zinc-400">
+          {t('hero.subtitle')}
+        </p>
+
+        <div className="mt-8 flex flex-wrap gap-4">
+          <a
+            href="#projects"
+            className="rounded-lg bg-blue-600 px-6 py-3 font-medium hover:bg-blue-500"
+          >
+            {t('hero.cta.viewProjects')}
+          </a>
+
+          <a
+            href="#contact"
+            className="rounded-lg border border-zinc-700 px-6 py-3 font-medium hover:border-zinc-500"
+          >
+            {t('hero.cta.contact')}
+          </a>
+        </div>
+
+        <div className="mt-10 flex gap-5">
+          <a href="https://www.linkedin.com/in/diegograf/" target="_blank" rel="noreferrer">
+            <FaLinkedin size={30} />
+          </a>
+          <a href="https://github.com/diegorafaelgraf" target="_blank" rel="noreferrer">
+            <FaGithub size={30} />
+          </a>
+          <a href="mailto:graf.drg@gmail.com">
+            <FaMailBulk size={30} />
+          </a>
+        </div>
+      </motion.div>
+
+      <motion.div
+        initial={{ opacity: 0, scale: 0.95 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.8 }}
+        className="flex justify-center"
+      >
+        <img
+          src={profile}
+          alt={t('header.name')}
+          className="h-80 w-80 rounded-3xl object-cover border border-zinc-800"
+        />
+      </motion.div>
+    </section>
+  );
+}
