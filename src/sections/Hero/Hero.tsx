@@ -9,7 +9,7 @@ export default function Hero() {
   return (
     <section
       id="hero"
-      className="mx-auto flex min-h-[90vh] max-w-6xl flex-col items-center justify-center gap-12 px-6 md:flex-row"
+      className="scroll-mt-20 mx-auto flex min-h-[90vh] max-w-6xl flex-col items-center justify-center gap-12 px-6 md:flex-row"
     >
       <motion.div
         initial={{ opacity: 0, y: 25 }}

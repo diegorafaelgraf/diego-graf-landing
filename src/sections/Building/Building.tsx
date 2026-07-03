@@ -9,7 +9,7 @@ export default function Building() {
   return (
     <section
       id="building"
-      className="mx-auto max-w-6xl px-6 py-32"
+      className="scroll-mt-20 mx-auto max-w-6xl px-6 py-32"
     >
       <span className="font-medium text-blue-500">
         {t('building.section')}

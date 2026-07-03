@@ -9,7 +9,7 @@ export default function Learning() {
   return (
     <section
       id="learning"
-      className="mx-auto max-w-6xl px-6 py-32"
+      className="scroll-mt-20 mx-auto max-w-6xl px-6 py-32"
     >
       <span className="font-medium text-blue-500">
         {t('learning.section')}
