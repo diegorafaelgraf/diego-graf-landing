@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
+import { Menu, X } from 'lucide-react';
 import logo from '../../assets/logo.png';
 import styles from './Header.module.css';
 
@@ -16,6 +17,7 @@ const navItems = [
 export default function Header() {
   const { t, i18n } = useTranslation();
   const [activeSection, setActiveSection] = useState('hero');
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   useEffect(() => {
     const sections = navItems
@@ -59,15 +61,80 @@ export default function Header() {
     };
   }, []);
 
-  return (
-    <header className="sticky top-0 z-50 border-b border-zinc-800 bg-zinc-950/80 backdrop-blur">
-      <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-2">
-        <a href="#hero" className="flex items-center gap-3 self-center" aria-label={t('header.name')}>
-          <img src={logo} alt={t('header.name')} className="h-32 w-50 sm:h-44 sm:w-64 rounded-md object-cover" />
-        </a>
+  useEffect(() => {
+    if (!isMenuOpen) {
+      return;
+    }
 
-        <div className="ml-auto flex items-center gap-6">
-          <nav className="hidden items-center gap-8 md:flex">
+    const handleKeyDown = (event: KeyboardEvent) => {
+      if (event.key === 'Escape') {
+        setIsMenuOpen(false);
+      }
+    };
+
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, [isMenuOpen]);
+
+  return (
+    <header className="fixed inset-x-0 top-0 z-50 border-b border-zinc-800 bg-zinc-950/80 backdrop-blur lg:sticky">
+      <div className="max-w-6xl px-7 mr-2 ml-0 sm:px-4">
+        <div className="flex items-center justify-between gap-4 py-2">
+          <a href="#hero" className="flex shrink-0 items-center" aria-label={t('header.name')}>
+            <img src={logo} alt={t('header.name')} className="h-7 w-42 sm:w-52 sm:h-12 lg:h-14 lg:w-56 rounded-md object-cover" />
+          </a>
+
+          <div className="ml-auto flex items-center gap-3 lg:gap-6">
+            <nav className="hidden items-center gap-8 lg:flex">
+              {navItems.map((item) => {
+                const isActive = activeSection === item.id;
+
+                return (
+                  <a
+                    key={item.id}
+                    href={`#${item.id}`}
+                    className={`${styles.link} ${isActive ? styles.activeLink : ''}`}
+                    aria-current={isActive ? 'page' : undefined}
+                  >
+                    {t(item.labelKey)}
+                  </a>
+                );
+              })}
+            </nav>
+
+            <div className="flex items-center gap-2 rounded-full border border-zinc-800 bg-zinc-900/60 px-2 py-1">
+              <button
+                onClick={() => i18n.changeLanguage('en')}
+                className="text-md font-medium text-zinc-400 transition hover:text-white"
+              >
+                EN
+              </button>
+
+              <span className="text-zinc-600">|</span>
+
+              <button
+                onClick={() => i18n.changeLanguage('es')}
+                className="text-md font-medium text-zinc-400 transition hover:text-white"
+              >
+                ES
+              </button>
+            </div>
+
+            <button
+              type="button"
+              onClick={() => setIsMenuOpen((isOpen) => !isOpen)}
+              className="flex h-10 w-10 items-center justify-center rounded-md text-zinc-300 transition hover:bg-zinc-800 hover:text-white lg:hidden"
+              aria-label={isMenuOpen ? t('header.closeMenu') : t('header.openMenu')}
+              aria-expanded={isMenuOpen}
+              aria-controls="mobile-navigation"
+            >
+              {isMenuOpen ? <X size={22} aria-hidden="true" /> : <Menu size={22} aria-hidden="true" />}
+            </button>
+          </div>
+        </div>
+
+        {isMenuOpen && (
+          <nav id="mobile-navigation" className="grid gap-1 border-t border-zinc-800 py-2 lg:hidden">
             {navItems.map((item) => {
               const isActive = activeSection === item.id;
 
@@ -75,7 +142,8 @@ export default function Header() {
                 <a
                   key={item.id}
                   href={`#${item.id}`}
-                  className={`${styles.link} ${isActive ? styles.activeLink : ''}`}
+                  onClick={() => setIsMenuOpen(false)}
+                  className={`${styles.link} ${isActive ? styles.activeLink : ''} rounded-md px-3 py-2`}
                   aria-current={isActive ? 'page' : undefined}
                 >
                   {t(item.labelKey)}
@@ -83,25 +151,7 @@ export default function Header() {
               );
             })}
           </nav>
-
-          <div className="flex items-center gap-2 rounded-full border border-zinc-800 bg-zinc-900/60 px-2 py-1">
-            <button
-              onClick={() => i18n.changeLanguage('en')}
-              className="text-md font-medium text-zinc-400 transition hover:text-white"
-            >
-              EN
-            </button>
-
-            <span className="text-zinc-600">|</span>
-
-            <button
-              onClick={() => i18n.changeLanguage('es')}
-              className="text-md font-medium text-zinc-400 transition hover:text-white"
-            >
-              ES
-            </button>
-          </div>
-        </div>
+        )}
       </div>
     </header>
   );

@@ -9,13 +9,13 @@ export default function Hero() {
   return (
     <section
       id="hero"
-      className="scroll-mt-0 mx-auto flex min-h-[90vh] max-w-6xl flex-col items-center justify-center gap-12 px-6 md:flex-row"
+      className="scroll-mt-14.25 mx-auto flex min-h-[90vh] max-w-6xl flex-col items-center justify-center gap-12 px-6 pt-8 sm:scroll-mt-16.25 md:flex-row md:pt-0 lg:scroll-mt-[73px]"
     >
       <motion.div
         initial={{ opacity: 0, y: 25 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
-        className="flex-1"
+        className="w-full flex-1 md:w-auto"
       >
         <span className="rounded-full border border-zinc-700 px-4 py-1 text-sm text-zinc-400">
           {t('hero.badge')}

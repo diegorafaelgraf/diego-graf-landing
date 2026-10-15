@@ -21,7 +21,9 @@
     }
   },
   "header": {
-    "name": "Diego Graf"
+    "name": "Diego Graf",
+    "openMenu": "Open navigation menu",
+    "closeMenu": "Close navigation menu"
   },
   "about": {
     "section": "ABOUT",
@@ -138,7 +140,7 @@
       "playwrightPowerTechniques": {
         "title": "Playwright Power Techniques: Fast and Reliable Web Testing",
         "description": "Playwright Power Techniques: Fast and Reliable Web Testing is an intermediate-level course designed for testers and automation engineers who want to build scalable, cross-browser web tests using Playwright. As modern web applications grow in complexity, testing must be both fast and resilient. This course goes beyond the basics, covering advanced Playwright features such as browser contexts, parallel execution, and visual regression testing. The course explores real-world scenarios including login flows, file uploads, and CI/CD integration, simulating high-stakes testing challenges. Through a combination of hands-on labs, code walkthroughs, and debugging practice, the course covers how to build test suites that are fast, stable, and production-ready. It also covers configuring tests to run in headless mode, detecting UI regressions through visual comparisons, and triggering automated workflows using GitHub Actions or GitLab CI. Whether the goal is to scale tests across multiple browsers or troubleshoot flaky scripts, this course provides the knowledge and practical techniques needed to support continuous quality in modern DevOps pipelines."
-      }      
+      }
     }
   },
   "now": {
