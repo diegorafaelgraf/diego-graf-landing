@@ -9,7 +9,7 @@ export default function Hero() {
   return (
     <section
       id="hero"
-      className="scroll-mt-20 mx-auto flex min-h-[90vh] max-w-6xl flex-col items-center justify-center gap-12 px-6 md:flex-row"
+      className="scroll-mt-0 mx-auto flex min-h-[90vh] max-w-6xl flex-col items-center justify-center gap-12 px-6 md:flex-row"
     >
       <motion.div
         initial={{ opacity: 0, y: 25 }}
@@ -21,7 +21,7 @@ export default function Hero() {
           {t('hero.badge')}
         </span>
 
-        <h1 className="mt-6 text-5xl font-bold leading-tight md:text-7xl">
+        <h1 className="mt-6 max-w-2xl text-5xl font-bold leading-tight md:text-7xl">
           {t('hero.title').split('\n').map((line, idx) => (
             <span key={idx}>
               {line}
@@ -30,7 +30,7 @@ export default function Hero() {
           ))}
         </h1>
 
-        <p className="mt-6 max-w-xl text-lg text-zinc-400">
+        <p className="mt-6 max-w-2xl text-lg text-zinc-400">
           {t('hero.subtitle')}
         </p>
 
@@ -51,14 +51,27 @@ export default function Hero() {
         </div>
 
         <div className="mt-10 flex gap-5">
-          <a href="https://www.linkedin.com/in/diegograf/" target="_blank" rel="noreferrer">
-            <FaLinkedin size={30} />
+          <a
+            href="https://www.linkedin.com/in/diegograf/"
+            target="_blank"
+            rel="noreferrer"
+            className="text-zinc-400 transition-colors duration-300 hover:text-blue-500"
+          >
+            <FaLinkedin size={35} />
           </a>
-          <a href="https://github.com/diegorafaelgraf" target="_blank" rel="noreferrer">
-            <FaGithub size={30} />
+          <a
+            href="https://github.com/diegorafaelgraf"
+            target="_blank"
+            rel="noreferrer"
+            className="text-zinc-400 transition-colors duration-300 hover:text-blue-500"
+          >
+            <FaGithub size={35} />
           </a>
-          <a href="mailto:graf.drg@gmail.com">
-            <FaMailBulk size={30} />
+          <a
+            href="mailto:graf.drg@gmail.com"
+            className="text-zinc-400 transition-colors duration-300 hover:text-blue-500"
+          >
+            <FaMailBulk size={35} />
           </a>
         </div>
       </motion.div>
@@ -72,7 +85,7 @@ export default function Hero() {
         <img
           src={profile}
           alt={t('header.name')}
-          className="h-80 w-80 rounded-3xl object-cover border border-zinc-800"
+          className="h-105 w-105 rounded-xl object-cover border border-zinc-800"
         />
       </motion.div>
     </section>
