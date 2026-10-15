@@ -7,7 +7,7 @@ export default function QuickStats() {
   return (
     <section
       id="highlights"
-      className="scroll-mt-20 mx-auto max-w-6xl px-6 py-32"
+      className="scroll-mt-0 mx-auto max-w-6xl px-6 py-32"
     >
       <div className="mt-16 grid grid-cols-2 gap-6 md:grid-cols-4">
         {stats.map((stat) => (

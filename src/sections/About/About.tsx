@@ -6,7 +6,7 @@ export default function About() {
   return (
     <section
       id="about"
-      className="scroll-mt-20 mx-auto max-w-6xl px-6 py-32"
+      className="scroll-mt-0 mx-auto max-w-6xl px-6 py-32"
     >
       <motion.div
         initial={{ opacity: 0, y: 25 }}
