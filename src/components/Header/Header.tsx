@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
+import logo from '../../assets/logo.png';
 import styles from './Header.module.css';
 
 const navItems = [
@@ -60,40 +61,46 @@ export default function Header() {
 
   return (
     <header className="sticky top-0 z-50 border-b border-zinc-800 bg-zinc-950/80 backdrop-blur">
-      <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
-        <span className="font-semibold">{t('header.name')}</span>
+      <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-2">
+        <a href="#hero" className="flex items-center gap-3 self-center" aria-label={t('header.name')}>
+          <img src={logo} alt={t('header.name')} className="h-32 w-50 sm:h-44 sm:w-64 rounded-md object-cover" />
+        </a>
 
-        <nav className="hidden gap-8 md:flex">
-          {navItems.map((item) => {
-            const isActive = activeSection === item.id;
+        <div className="ml-auto flex items-center gap-6">
+          <nav className="hidden items-center gap-8 md:flex">
+            {navItems.map((item) => {
+              const isActive = activeSection === item.id;
 
-            return (
-              <a
-                key={item.id}
-                href={`#${item.id}`}
-                className={`${styles.link} ${isActive ? styles.activeLink : ''}`}
-                aria-current={isActive ? 'page' : undefined}
-              >
-                {t(item.labelKey)}
-              </a>
-            );
-          })}
-        </nav>
+              return (
+                <a
+                  key={item.id}
+                  href={`#${item.id}`}
+                  className={`${styles.link} ${isActive ? styles.activeLink : ''}`}
+                  aria-current={isActive ? 'page' : undefined}
+                >
+                  {t(item.labelKey)}
+                </a>
+              );
+            })}
+          </nav>
 
-        <div className="flex gap-2">
-          <button
-            onClick={() => i18n.changeLanguage('en')}
-            className="text-sm text-zinc-400 hover:text-white"
-          >
-            EN
-          </button>
+          <div className="flex items-center gap-2 rounded-full border border-zinc-800 bg-zinc-900/60 px-2 py-1">
+            <button
+              onClick={() => i18n.changeLanguage('en')}
+              className="text-md font-medium text-zinc-400 transition hover:text-white"
+            >
+              EN
+            </button>
 
-          <button
-            onClick={() => i18n.changeLanguage('es')}
-            className="text-sm text-zinc-400 hover:text-white"
-          >
-            ES
-          </button>
+            <span className="text-zinc-600">|</span>
+
+            <button
+              onClick={() => i18n.changeLanguage('es')}
+              className="text-md font-medium text-zinc-400 transition hover:text-white"
+            >
+              ES
+            </button>
+          </div>
         </div>
       </div>
     </header>
