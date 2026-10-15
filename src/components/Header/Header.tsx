@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Menu, X } from 'lucide-react';
 import logo from '../../assets/logo.png';
@@ -16,8 +16,36 @@ const navItems = [
 
 export default function Header() {
   const { t, i18n } = useTranslation();
+  const headerRef = useRef<HTMLElement>(null);
   const [activeSection, setActiveSection] = useState('hero');
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  useEffect(() => {
+    const header = headerRef.current;
+    const visualViewport = window.visualViewport;
+
+    if (!header) {
+      return;
+    }
+
+    const mobileBreakpoint = window.matchMedia('(max-width: 1023px)');
+    const syncHeaderPosition = () => {
+      header.style.top = mobileBreakpoint.matches
+        ? `${visualViewport?.offsetTop ?? 0}px`
+        : '0px';
+    };
+
+    syncHeaderPosition();
+    visualViewport?.addEventListener('scroll', syncHeaderPosition);
+    visualViewport?.addEventListener('resize', syncHeaderPosition);
+    mobileBreakpoint.addEventListener('change', syncHeaderPosition);
+
+    return () => {
+      visualViewport?.removeEventListener('scroll', syncHeaderPosition);
+      visualViewport?.removeEventListener('resize', syncHeaderPosition);
+      mobileBreakpoint.removeEventListener('change', syncHeaderPosition);
+    };
+  }, []);
 
   useEffect(() => {
     const sections = navItems
@@ -77,7 +105,7 @@ export default function Header() {
   }, [isMenuOpen]);
 
   return (
-    <header className="fixed inset-x-0 top-0 z-50 border-b border-zinc-800 bg-zinc-950/80 backdrop-blur lg:sticky">
+    <header ref={headerRef} className={`${styles.mobileFixedHeader} fixed inset-x-0 top-0 z-50 border-b border-zinc-800 bg-zinc-950/95 lg:sticky lg:bg-zinc-950/80 lg:backdrop-blur`}>
       <div className="max-w-6xl px-7 mr-2 ml-0 sm:px-4">
         <div className="flex items-center justify-between gap-4 py-2">
           <a href="#hero" className="flex shrink-0 items-center" aria-label={t('header.name')}>
