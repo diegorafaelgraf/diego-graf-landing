@@ -14,9 +14,9 @@
   "hero": {
     "badge": "Available for freelance projects",
     "title": "Building software,\nautomation and\ndigital products.",
-    "subtitle": "Full Stack Developer, QA Automation Engineer and Data Analyst with 20+ years of experience.",
+    "subtitle": "Helping teams deliver reliable software through development, automation and analytics.",
     "cta": {
-      "viewProjects": "View Projects",
+      "viewProjects": "See my work",
       "contact": "Contact"
     }
   },
@@ -135,18 +135,10 @@
     "description": "Technologies, methodologies and concepts I'm actively studying and experimenting with.",
     "progressLabel": "Progress",
     "items": {
-      "dockerKubernetes": {
-        "title": "Docker & Kubernetes",
-        "category": "DevOps"
-      },
-      "modernReactPatterns": {
-        "title": "Modern React Patterns",
-        "category": "Frontend"
-      },
-      "aiAgentsAutomation": {
-        "title": "AI Agents & Automation",
-        "category": "AI"
-      }
+      "playwrightPowerTechniques": {
+        "title": "Playwright Power Techniques: Fast and Reliable Web Testing",
+        "description": "Playwright Power Techniques: Fast and Reliable Web Testing is an intermediate-level course designed for testers and automation engineers who want to build scalable, cross-browser web tests using Playwright. As modern web applications grow in complexity, testing must be both fast and resilient. This course goes beyond the basics, covering advanced Playwright features such as browser contexts, parallel execution, and visual regression testing. The course explores real-world scenarios including login flows, file uploads, and CI/CD integration, simulating high-stakes testing challenges. Through a combination of hands-on labs, code walkthroughs, and debugging practice, the course covers how to build test suites that are fast, stable, and production-ready. It also covers configuring tests to run in headless mode, detecting UI regressions through visual comparisons, and triggering automated workflows using GitHub Actions or GitLab CI. Whether the goal is to scale tests across multiple browsers or troubleshoot flaky scripts, this course provides the knowledge and practical techniques needed to support continuous quality in modern DevOps pipelines."
+      }      
     }
   },
   "now": {
@@ -167,6 +159,8 @@
     "linkedInLabel": "LinkedIn",
     "linkedInHref": "https://www.linkedin.com/in/diegograf/",
     "githubLabel": "GitHub",
-    "githubHref": "https://github.com/diegorafaelgraf"
+    "githubHref": "https://github.com/diegorafaelgraf",
+    "whatsappLabel": "WhatsApp",
+    "whatsappHref": "https://wa.me/5493434676091"
   }
 }

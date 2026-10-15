@@ -14,9 +14,9 @@
   "hero": {
     "badge": "Disponible para proyectos freelance",
     "title": "Construyendo software,\nautomatización y\nproductos digitales.",
-    "subtitle": "Desarrollador Full Stack, QA Automation Engineer y Analista de Datos con más de 15 años de experiencia.",
+    "subtitle": "Ayudando a los equipos a entregar software confiable a través del desarrollo, la automatización y la analítica.",
     "cta": {
-      "viewProjects": "Ver proyectos",
+      "viewProjects": "Ver mi trabajo",
       "contact": "Contacto"
     }
   },
@@ -125,28 +125,20 @@
       "pfComparer": {
         "title": "PF Comparer",
         "description": "Aplicación móvil Android para comparar plazos fijos en diferentes bancos.",
-        "status": "Backend Active Development"
+        "status": "Desarrollo activo del backend"
       }
     }
   },
   "learning": {
-    "section": "APRENDIENDO ACTUALMENTE",
-    "title": "Aprendizaje continuo.",
-    "description": "Tecnologías, metodologías y conceptos que estoy estudiando y experimentando activamente.",
-    "progressLabel": "Progreso",
+    "section": "CURRENTLY LEARNING",
+    "title": "Continuous learning.",
+    "description": "Technologies, methodologies and concepts I'm actively studying and experimenting with.",
+    "progressLabel": "Progress",
     "items": {
-      "dockerKubernetes": {
-        "title": "Docker & Kubernetes",
-        "category": "DevOps"
-      },
-      "modernReactPatterns": {
-        "title": "Modern React Patterns",
-        "category": "Frontend"
-      },
-      "aiAgentsAutomation": {
-        "title": "AI Agents & Automation",
-        "category": "AI"
-      }
+      "playwrightPowerTechniques": {
+        "title": "Playwright Power Techniques: Fast and Reliable Web Testing",
+        "description": "Playwright Power Techniques: Fast and Reliable Web Testing es un curso de nivel intermedio diseñado para probadores e ingenieros de automatización que deseen crear pruebas web escalables y compatibles con distintos navegadores utilizando Playwright. A medida que las aplicaciones web modernas se vuelven cada vez más complejas, las pruebas deben ser rápidas y resistentes. Este curso va más allá de los conceptos básicos y abarca funciones avanzadas de Playwright, como los contextos de navegador, la ejecución en paralelo y las pruebas de regresión visual. El curso explora escenarios reales, como flujos de inicio de sesión, subidas de archivos e integración con CI/CD, simulando retos de pruebas de alto riesgo. Mediante una combinación de ejercicios prácticos, análisis de código y prácticas de depuración, el curso explica cómo crear conjuntos de pruebas que sean rápidos, estables y listos para producción. También aborda la configuración de pruebas para que se ejecuten en modo «headless», la detección de regresiones en la interfaz de usuario mediante comparaciones visuales y la activación de flujos de trabajo automatizados utilizando GitHub Actions o GitLab CI. Tanto si el objetivo es escalar las pruebas a través de múltiples navegadores como solucionar problemas en scripts inestables, este curso proporciona los conocimientos y las técnicas prácticas necesarias para garantizar la calidad continua en los procesos modernos de DevOps."
+      }      
     }
   },
   "now": {
@@ -167,6 +159,8 @@
     "linkedInLabel": "LinkedIn",
     "linkedInHref": "https://www.linkedin.com/in/diegograf/",
     "githubLabel": "GitHub",
-    "githubHref": "https://github.com/diegorafaelgraf"
+    "githubHref": "https://github.com/diegorafaelgraf",
+    "whatsappLabel": "WhatsApp",
+    "whatsappHref": "https://wa.me/5493434676091"
   }
 }
