@@ -6,7 +6,7 @@ export default function Learning() {
   return (
     <section
       id="learning"
-      className="mx-auto max-w-6xl px-6 py-32"
+      className="mx-auto max-w-6xl px-6 py-32 overflow-hidden"
     >
       <span className="font-medium text-blue-500">
         CURRENTLY LEARNING
