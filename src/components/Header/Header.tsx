@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react'; 
 import { useTranslation } from 'react-i18next';
 import { Menu, X } from 'lucide-react';
 import logo from '../../assets/logo.png';
@@ -21,63 +21,44 @@ export default function Header() {
 
   useEffect(() => {
     const sections = navItems
-      .map((item) => {
-        const element = document.getElementById(item.id);
-        return element;
-      })
+      .map((item) => document.getElementById(item.id))
       .filter((section): section is HTMLElement => Boolean(section));
 
-    if (sections.length === 0) {
-      return;
-    }
+    if (sections.length === 0) return;
 
     const handleScroll = () => {
-      // Punto de referencia: 120px desde el top (altura del header + margen)
       const referencePoint = 120;
-
       let closestSection = sections[0];
       let closestDistance = Math.abs(sections[0].getBoundingClientRect().top - referencePoint);
 
       sections.forEach((section) => {
         const distance = Math.abs(section.getBoundingClientRect().top - referencePoint);
-
         if (distance < closestDistance) {
           closestDistance = distance;
           closestSection = section;
         }
       });
-
       setActiveSection(closestSection.id);
     };
 
-    // Ejecutar una vez al cargar
     handleScroll();
-
-    // Agregar listener de scroll
     window.addEventListener('scroll', handleScroll, { passive: true });
-
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
+    return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  // EFECTO 2: Tecla Escape (Mantenido igual)
   useEffect(() => {
-    if (!isMenuOpen) {
-      return;
-    }
-
+    if (!isMenuOpen) return;
     const handleKeyDown = (event: KeyboardEvent) => {
-      if (event.key === 'Escape') {
-        setIsMenuOpen(false);
-      }
+      if (event.key === 'Escape') setIsMenuOpen(false);
     };
-
     window.addEventListener('keydown', handleKeyDown);
     return () => window.removeEventListener('keydown', handleKeyDown);
   }, [isMenuOpen]);
 
   return (
-    <header className={`${styles.mobileFixedHeader} sticky inset-x-0 top-0 z-50 border-b border-zinc-800 bg-zinc-950/95 lg:sticky lg:bg-zinc-950/80 lg:backdrop-blur`}>
+    /* CAMBIO CLAVE AQUÍ: Cambiamos 'fixed' por 'sticky' en general y eliminamos clases conflictivas */
+    <header className="sticky top-0 z-50 w-full border-b border-zinc-800 bg-zinc-950/95 lg:bg-zinc-950/80 lg:backdrop-blur">
       <div className="max-w-6xl px-7 mr-2 ml-0 sm:px-4">
         <div className="flex items-center justify-between gap-4 py-2">
           <a href="#hero" className="flex shrink-0 items-center" aria-label={t('header.name')}>
@@ -88,7 +69,6 @@ export default function Header() {
             <nav className="hidden items-center gap-8 lg:flex">
               {navItems.map((item) => {
                 const isActive = activeSection === item.id;
-
                 return (
                   <a
                     key={item.id}
@@ -103,21 +83,9 @@ export default function Header() {
             </nav>
 
             <div className="flex items-center gap-2 rounded-full border border-zinc-800 bg-zinc-900/60 px-2 py-1">
-              <button
-                onClick={() => i18n.changeLanguage('en')}
-                className="text-md font-medium text-zinc-400 transition hover:text-white"
-              >
-                EN
-              </button>
-
+              <button onClick={() => i18n.changeLanguage('en')} className="text-md font-medium text-zinc-400 transition hover:text-white">EN</button>
               <span className="text-zinc-600">|</span>
-
-              <button
-                onClick={() => i18n.changeLanguage('es')}
-                className="text-md font-medium text-zinc-400 transition hover:text-white"
-              >
-                ES
-              </button>
+              <button onClick={() => i18n.changeLanguage('es')} className="text-md font-medium text-zinc-400 transition hover:text-white">ES</button>
             </div>
 
             <button
@@ -137,7 +105,6 @@ export default function Header() {
           <nav id="mobile-navigation" className="grid gap-1 border-t border-zinc-800 py-2 lg:hidden">
             {navItems.map((item) => {
               const isActive = activeSection === item.id;
-
               return (
                 <a
                   key={item.id}
