@@ -9,7 +9,8 @@
     "highlights": "Destacados",
     "stack": "Stack",
     "building": "Construyendo",
-    "learning": "Aprendizaje"
+    "learning": "Aprendizaje",
+    "professionalExperience": "Experiencia"
   },
   "hero": {
     "badge": "Disponible para proyectos freelance",
@@ -106,6 +107,86 @@
     "section": "ACTUALMENTE CONSTRUYENDO",
     "title": "Productos e ideas en progreso.",
     "description": "Una colección de proyectos que estoy construyendo, validando y mejorando activamente."
+  },
+  "professionalExperience": {
+    "section": "RECORRIDO PROFESIONAL",
+    "title": "Experiencia profesional",
+    "description": "Una selección de roles y experiencias que han marcado mi trayectoria.",
+    "downloadCv": "Descargar mi CV",
+    "empty": "Próximamente voy a compartir mis experiencias profesionales.",
+    "showMore": "Ver {{count}} experiencias más",
+    "showLess": "Mostrar menos experiencias",
+    "viewDetails": "Ver detalles del rol",
+    "closeDetails": "Cerrar detalles de la experiencia",
+    "detailsHeading": "Detalles del rol",
+    "items": {
+      "swissMedical": {
+        "period": "2021–Actualidad",
+        "role": "Líder técnico / Desarrollador Full Stack",
+        "company": "Swiss Medical",
+        "description": "Colaboré con el equipo en la resolución de incidentes de producción de la plataforma web de prestadores mediante el análisis de logs y la depuración de errores.\n\nRealicé despliegues de frontend y backend en entornos de desarrollo, testing y producción.\n\nMantuve la plataforma y desarrollé nuevas funcionalidades con PHP, React, Node.js, HTML y CSS. Utilicé herramientas de IA como Cursor para mejorar la productividad, acelerar el desarrollo y elevar la calidad del código."
+      },
+      "bosonic": {
+        "period": "2021–2025",
+        "role": "Desarrollador de automatización QA",
+        "company": "Bosonic",
+        "description": "Desarrollé pruebas automatizadas con Cypress.\n\nIntegré la ejecución de pruebas en pipelines de Jenkins para acompañar la integración y entrega continuas.\n\nContribuí a asegurar la calidad del producto mediante la implementación y el mantenimiento de frameworks de pruebas."
+      },
+      "carnesValidadas": {
+        "period": "2021–2022",
+        "role": "Desarrollador MERN Stack",
+        "company": "Carnes Validadas",
+        "description": "Mantuve y corregí errores en una plataforma comercial desarrollada con React, Node.js y MongoDB.\n\nContribuí a mejorar la estabilidad y el rendimiento de la plataforma."
+      },
+      "freelanceProjects": {
+        "period": "2016–2020",
+        "role": "Desarrollador Android y PHP (Freelance)",
+        "company": "Proyectos independientes",
+        "description": "Desarrollé una aplicación Android para CPCEER (Paraná), con inscripción a cursos, credencial virtual, integración de noticias y un backend con API REST construido con CakePHP y MySQL.\n\nDesarrollé un juego de tragamonedas para el Ministerio de Turismo de Entre Ríos con Android Java, registro de usuarios y lógica de recompensas.\n\nCreé una aplicación lectora de noticias RSS para el Ente Regulador de la Energía de Entre Ríos."
+      },
+      "bancoEntreRios": {
+        "period": "2009–2021",
+        "role": "Analista Senior de BI / Datos",
+        "company": "Banco Entre Ríos",
+        "description": "Diseñé, desarrollé y mantuve tableros e informes estratégicos para la alta dirección con SAP BusinessObjects Web Intelligence.\n\nConstruí y automaticé flujos de reportes de punta a punta, integrando datos de Oracle, MySQL, CSV y archivos planos de gran tamaño.\n\nDesarrollé soluciones analíticas avanzadas en Excel con macros VBA para automatizar procesos, consolidar datos y generar modelos de reportes de múltiples fuentes. Preparé análisis de KPIs e informes ejecutivos para distintas unidades de negocio.\n\nAutomaticé procesos manuales de reporting para mejorar la eficiencia, la precisión y los tiempos de respuesta. Gestioné grandes volúmenes de datos para su extracción, transformación, análisis y generación de informes.\n\nReduje un 30% el tiempo dedicado a reportes y análisis mediante automatizaciones en SAP BusinessObjects."
+      },
+      "miguelWaigel": {
+        "period": "2007–2009",
+        "role": "Soporte IT y Desarrollador de Software",
+        "company": "Miguel Waigel y Cia. S.A.",
+        "description": "Brindé soporte de software y hardware y desarrollé herramientas en PHP.\n\nInstalé, configuré y administré servidores Linux."
+      },
+      "educacionIt": {
+        "period": "2021–2022",
+        "role": "Instructor de Android",
+        "company": "Educación IT",
+        "description": "Instructor de Android en Educación IT."
+      },
+      "materiaSistemas": {
+        "period": "2016–2017",
+        "role": "Desarrollador PHP",
+        "company": "Materia Sistemas",
+        "description": "Desarrollador PHP."
+      },
+      "getStyle": {
+        "period": "2009–2011",
+        "role": "Desarrollador Web",
+        "company": "GetStyle",
+        "description": "Me desempeñé como desarrollador web utilizando PHP y MySQL."
+      },
+      "hoffmann": {
+        "period": "2009–2010",
+        "role": "Técnico de Soporte IT",
+        "company": "Marcelo Edmundo Hoffmann e Hijos S.A.",
+        "description": "Técnico de Soporte IT en Marcelo Edmundo Hoffmann e Hijos S.A."
+      },
+      "iosper": {
+        "period": "2004–2007",
+        "role": "Asistente Administrativo",
+        "company": "IOSPER",
+        "description": "Me desempeñé como asistente administrativo y realicé tareas de ingreso de datos."
+      }
+    }
   },
   "projects": {
     "section": "PROYECTOS",

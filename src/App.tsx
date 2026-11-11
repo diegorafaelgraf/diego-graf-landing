@@ -6,6 +6,7 @@ import Building from './sections/Building/Building';
 import Contact from './sections/Contact/Contact';
 import Highlights from './sections/Highlights/Highlights';
 import Learning from './sections/Learning/Learning';
+import ProfessionalExperience from './sections/ProfessionalExperience/ProfessionalExperience';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Highlights />
         <Stack />
         <Building />
+        <ProfessionalExperience />
         <Learning />
         <Contact />
       </main>

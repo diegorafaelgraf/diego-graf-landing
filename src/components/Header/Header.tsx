@@ -10,6 +10,7 @@ const navItems = [
   { id: 'highlights', labelKey: 'nav.highlights' },
   { id: 'stack', labelKey: 'nav.stack' },
   { id: 'building', labelKey: 'nav.building' },
+  { id: 'professional-experience', labelKey: 'nav.professionalExperience' },
   { id: 'learning', labelKey: 'nav.learning' },
   { id: 'contact', labelKey: 'nav.contact' },
 ];

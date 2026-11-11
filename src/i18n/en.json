@@ -9,7 +9,8 @@
     "highlights": "Highlights",
     "stack": "Stack",
     "building": "Building",
-    "learning": "Learning"
+    "learning": "Learning",
+    "professionalExperience": "Experience"
   },
   "hero": {
     "badge": "Available for freelance projects",
@@ -106,6 +107,86 @@
     "section": "CURRENTLY BUILDING",
     "title": "Products and ideas in progress.",
     "description": "A collection of projects I'm actively building, validating and improving."
+  },
+  "professionalExperience": {
+    "section": "CAREER JOURNEY",
+    "title": "Professional Experience",
+    "description": "A selection of roles and experiences that have shaped my career.",
+    "downloadCv": "Download my CV",
+    "empty": "Professional experiences will be added here soon.",
+    "showMore": "Show {{count}} more experiences",
+    "showLess": "Show fewer experiences",
+    "viewDetails": "View role details",
+    "closeDetails": "Close experience details",
+    "detailsHeading": "Role details",
+    "items": {
+      "swissMedical": {
+        "period": "2021–Present",
+        "role": "Technical Lead / Full Stack Developer",
+        "company": "Swiss Medical",
+        "description": "Supported the team in resolving production incidents within the providers web platform through log analysis and debugging.\n\nPerformed frontend and backend deployments across development, testing, and production environments.\n\nMaintained the platform and developed new features using PHP, React, Node.js, HTML, and CSS. Used AI tools such as Cursor to improve productivity, accelerate development, and enhance code quality."
+      },
+      "bosonic": {
+        "period": "2021–2025",
+        "role": "QA Automation Developer",
+        "company": "Bosonic",
+        "description": "Developed automated tests using Cypress.\n\nIntegrated test execution into Jenkins pipelines to support continuous integration and delivery.\n\nHelped ensure product quality by implementing and maintaining test frameworks."
+      },
+      "carnesValidadas": {
+        "period": "2021–2022",
+        "role": "MERN Stack Developer",
+        "company": "Carnes Validadas",
+        "description": "Maintained and fixed bugs in a commercial platform built with React, Node.js, and MongoDB.\n\nContributed to platform stability and performance improvements."
+      },
+      "freelanceProjects": {
+        "period": "2016–2020",
+        "role": "Android & PHP Developer (Freelance)",
+        "company": "Independent Projects",
+        "description": "Developed an Android app for CPCEER (Paraná), including course enrollment, a virtual ID card, news integration, and a REST API backend built with CakePHP and MySQL.\n\nBuilt a slot machine game for the Ministry of Tourism of Entre Ríos using Android Java, with user registration and reward logic.\n\nCreated an RSS news reader app for the Energy Regulator of Entre Ríos."
+      },
+      "bancoEntreRios": {
+        "period": "2009–2021",
+        "role": "Senior BI / Data Analyst",
+        "company": "Banco Entre Ríos",
+        "description": "Designed, developed, and maintained dashboards and strategic reports for senior management using SAP BusinessObjects Web Intelligence.\n\nBuilt and automated end-to-end reporting workflows, integrating data from Oracle, MySQL, CSV files, and large flat files.\n\nDeveloped advanced Excel analytical solutions with VBA macros for process automation, data consolidation, and multi-source reporting. Delivered data-driven insights, KPI analysis, and executive reporting across business units.\n\nAutomated manual reporting processes to improve efficiency, accuracy, and turnaround times. Managed large datasets for extraction, transformation, analysis, and reporting.\n\nReduced reporting and analysis time by 30% through automation in SAP BusinessObjects."
+      },
+      "miguelWaigel": {
+        "period": "2007–2009",
+        "role": "IT Support & Software Developer",
+        "company": "Miguel Waigel y Cia. S.A.",
+        "description": "Provided software and hardware support and developed tools in PHP.\n\nInstalled, configured, and administered Linux servers."
+      },
+      "educacionIt": {
+        "period": "2021–2022",
+        "role": "Android Instructor",
+        "company": "Educación IT",
+        "description": "Android Instructor at Educación IT."
+      },
+      "materiaSistemas": {
+        "period": "2016–2017",
+        "role": "PHP Developer",
+        "company": "Materia Sistemas",
+        "description": "PHP Developer."
+      },
+      "getStyle": {
+        "period": "2009–2011",
+        "role": "Web Developer",
+        "company": "GetStyle",
+        "description": "Worked as a web developer using PHP and MySQL."
+      },
+      "hoffmann": {
+        "period": "2009–2010",
+        "role": "IT Support Technician",
+        "company": "Marcelo Edmundo Hoffmann e Hijos S.A.",
+        "description": "IT Support Technician at Marcelo Edmundo Hoffmann e Hijos S.A."
+      },
+      "iosper": {
+        "period": "2004–2007",
+        "role": "Administrative Assistant",
+        "company": "IOSPER",
+        "description": "Worked as an administrative assistant and performed data entry tasks."
+      }
+    }
   },
   "projects": {
     "section": "PROJECTS",
