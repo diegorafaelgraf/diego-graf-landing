@@ -43,14 +43,14 @@ export default function CourseCard({ item }: CourseCardProps) {
               onClick={() => setIsDescriptionOpen(true)}
               className="mt-2 text-sm font-medium text-blue-400 hover:text-blue-300"
             >
-              Read more
+              {t('learning.readMore')}
             </button>
 
             {/* Progress */}
             <div className="mt-6">
               <div className="flex justify-between text-sm">
                 <span className="text-zinc-400">
-                  Progress
+                  {t('learning.overallProgress')}
                 </span>
 
                 <span>{item.progress}%</span>
@@ -74,7 +74,7 @@ export default function CourseCard({ item }: CourseCardProps) {
                 rel="noreferrer"
                 className="mt-5 inline-flex items-center gap-2 text-sm text-blue-400 hover:text-blue-300"
               >
-                View certificate
+                {t('learning.certificate.view')}
                 <ExternalLink size={14} />
               </a>
             )}
@@ -89,7 +89,7 @@ export default function CourseCard({ item }: CourseCardProps) {
           onClick={() => setIsDescriptionOpen(false)}
         >
           <div
-            className="relative w-full max-w-lg rounded-2xl border border-zinc-800 bg-zinc-900 p-8 shadow-2xl"
+            className="modal-scrollbar relative max-h-[calc(100dvh-3rem)] w-full max-w-lg overflow-y-auto rounded-2xl border border-zinc-800 bg-zinc-900 p-8 shadow-2xl"
             onClick={(event) => event.stopPropagation()}
           >
             <button
@@ -109,7 +109,7 @@ export default function CourseCard({ item }: CourseCardProps) {
               {item.title}
             </h3>
 
-            <p className="mt-6 leading-7 text-zinc-400">
+            <p className="mt-6 whitespace-pre-line leading-7 text-zinc-400">
               {t(`learning.items.${item.id}.description`)}
             </p>
           </div>

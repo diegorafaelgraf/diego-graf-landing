@@ -16,3 +16,26 @@ body {
 ::selection {
   background: #2563eb;
 }
+
+.modal-scrollbar {
+  scrollbar-color: #3f3f46 transparent;
+  scrollbar-width: thin;
+}
+
+.modal-scrollbar::-webkit-scrollbar {
+  width: 8px;
+}
+
+.modal-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.modal-scrollbar::-webkit-scrollbar-thumb {
+  border: 2px solid #18181b;
+  border-radius: 9999px;
+  background: #3f3f46;
+}
+
+.modal-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #3b82f6;
+}
