@@ -9,7 +9,7 @@ export default function Hero() {
   return (
     <section
       id="hero"
-      className="scroll-mt-14.25 mx-auto flex min-h-[90vh] max-w-6xl flex-col items-center justify-center gap-12 px-6 pt-8 sm:scroll-mt-16.25 md:flex-row md:pt-0 lg:scroll-mt-[73px]"
+      className="scroll-mt-14.25 mx-auto flex min-h-[90vh] max-w-6xl flex-col items-center justify-center gap-12 px-6 pt-8 sm:scroll-mt-16.25 md:flex-row md:pt-0 lg:scroll-mt-18.25"
     >
       <motion.div
         initial={{ opacity: 0, y: 25 }}
@@ -36,7 +36,7 @@ export default function Hero() {
 
         <div className="mt-8 flex flex-wrap gap-4">
           <a
-            href="#projects"
+            href="#building"
             className="rounded-lg bg-blue-600 px-6 py-3 font-medium hover:bg-blue-500"
           >
             {t('hero.cta.viewProjects')}
