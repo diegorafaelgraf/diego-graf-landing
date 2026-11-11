@@ -1,24 +1,26 @@
 import SpecializationCard from '../../components/Learning/SpecializationCard';
 import CourseCard from '../../components/Learning/CourseCard.tsx';
 import { learnings } from '../../data/learning';
+import { useTranslation } from 'react-i18next';
 
 export default function Learning() {
+  const { t } = useTranslation();
+
   return (
     <section
       id="learning"
       className="mx-auto max-w-6xl px-6 py-32 overflow-hidden"
     >
       <span className="font-medium text-blue-500">
-        CURRENTLY LEARNING
+        {t('learning.section')}
       </span>
 
       <h2 className="mt-4 text-4xl font-bold">
-        Continuous learning.
+        {t('learning.title')}
       </h2>
 
       <p className="mt-6 max-w-2xl text-zinc-400">
-        Technologies, methodologies and concepts I'm
-        actively studying and experimenting with.
+        {t('learning.description')}
       </p>
 
       <div className="mt-12 space-y-6">
