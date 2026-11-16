@@ -23,10 +23,3 @@ export const baseProjects = [
     demo: '',
   },
 ] as const;
-
-// export const projects = baseProjects.map((project) => ({
-//   ...project,
-//   title: i18n.t(`projects.items.${project.id}.title`, { defaultValue: project.id }),
-//   description: i18n.t(`projects.items.${project.id}.description`, { defaultValue: '' }),
-//   status: i18n.t(`projects.items.${project.id}.status`, { defaultValue: '' }),
-// }));

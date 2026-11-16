@@ -406,5 +406,12 @@
     "githubHref": "https://github.com/diegorafaelgraf",
     "whatsappLabel": "WhatsApp",
     "whatsappHref": "https://wa.me/5493434676091"
+  },
+  "footer": {
+    "credit": "Designed and developed by Diego Graf",
+    "builtWith": "Built with",
+    "source": "View source code",
+    "contact": "Contact",
+    "copyright": "© {{year}} Diego Graf. All rights reserved."
   }
 }
