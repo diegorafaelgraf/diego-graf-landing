@@ -1,73 +1,121 @@
-# React + TypeScript + Vite
+# Diego Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Landing page personal para presentar perfil profesional, stack tecnológico, proyectos en curso y canales de contacto.
 
-Currently, two official plugins are available:
+## Descripción
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Este proyecto es una web tipo landing page desarrollada con React + TypeScript + Vite. No tiene backend ni conexiones a APIs externas; el contenido es estático y se gestiona desde componentes y archivos de configuración local.
 
-## React Compiler
+La página está pensada para:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- presentar la identidad profesional
+- mostrar experiencia y áreas de trabajo
+- destacar tecnologías y herramientas
+- difundir proyectos activos y aprendizaje continuo
+- facilitar contacto con redes sociales y correo
 
-## Expanding the ESLint configuration
+## Stack
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- React 19
+- TypeScript
+- Vite
+- CSS Modules / CSS en componentes
+- Framer Motion para animaciones
+- i18next para internacionalización
+- React Icons y Lucide React para iconografía
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## Características principales
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+- Diseño moderno y enfocado en una landing personal
+- Secciones claras: hero, about, highlights, stack, building, learning y contact
+- Navegación con anchors internos
+- Soporte de idiomas con archivos JSON de traducción
+- Animaciones sutiles para mejorar la experiencia visual
+- Sin dependencias de backend ni autenticación
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## Estructura del proyecto
+
+```bash
+src/
+├── App.tsx
+├── components/
+│   └── Header/
+├── data/
+│   ├── learning.ts
+│   └── projects.ts
+├── i18n/
+│   ├── en.json
+│   ├── es.json
+│   └── index.ts
+├── sections/
+│   ├── About/
+│   ├── Building/
+│   ├── Contact/
+│   ├── Hero/
+│   ├── Highlights/
+│   ├── Learning/
+│   └── Stack/
+├── assets/
+│   ├── icons/
+│   └── images/
+├── index.css
+└── main.tsx
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## Requisitos
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+- Node.js 18 o superior
+- npm o pnpm
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## Instalación
+
+```bash
+npm install
 ```
+
+## Scripts disponibles
+
+```bash
+npm run dev
+```
+Inicia el servidor de desarrollo de Vite.
+
+```bash
+npm run build
+```
+Genera la versión de producción.
+
+```bash
+npm run preview
+```
+Sirve la build localmente para comprobar el resultado final.
+
+```bash
+npm run lint
+```
+Ejecuta ESLint para revisar el código.
+
+## Cómo se maneja el contenido
+
+El contenido principal de la landing está localizado en:
+
+- archivos de traducción dentro de [src/i18n](src/i18n)
+- datos estructurados en [src/data](src/data)
+- secciones en [src/sections](src/sections)
+
+Esto permite modificar textos, proyectos, cursos o redes sociales sin necesidad de backend.
+
+## Nota importante
+
+Esta web es una landing estática orientada a presentación profesional. No hay formularios con envío de datos ni integración con bases de datos ni servicios del lado del servidor. La información se presenta directamente en el frontend.
+
+## Despliegue
+
+Se puede desplegar fácilmente en cualquier servicio estático como:
+
+- Vercel
+- Netlify
+- GitHub Pages
+- Cloudflare Pages
+
+Solo requiere publicar la carpeta de build generada por Vite.

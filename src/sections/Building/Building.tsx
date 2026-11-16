@@ -1,7 +1,7 @@
 import { FaGithub, FaMailBulk } from 'react-icons/fa';
 import { useTranslation } from 'react-i18next';
 
-import { projects } from '../../data/projects';
+import { baseProjects } from '../../data/projects';
 
 export default function Building() {
   const { t } = useTranslation();
@@ -9,7 +9,7 @@ export default function Building() {
   return (
     <section
       id="building"
-      className="mx-auto max-w-6xl px-6 py-32"
+      className="scroll-mt-0 mx-auto max-w-6xl px-6 py-32"
     >
       <span className="font-medium text-blue-500">
         {t('building.section')}
@@ -24,7 +24,7 @@ export default function Building() {
       </p>
 
       <div className="mt-12 grid gap-6">
-        {projects.map((project) => (
+        {baseProjects.map((project) => (
           <article
             key={project.id}
             className="rounded-2xl border border-zinc-800 bg-zinc-900 p-8"
@@ -32,11 +32,11 @@ export default function Building() {
             <div className="flex flex-col gap-6 md:flex-row md:justify-between">
               <div className="flex-1">
                 <h3 className="text-2xl font-semibold">
-                  {project.title}
+                  {t(`projects.items.${project.id}.title`)}
                 </h3>
 
                 <p className="mt-3 text-zinc-400">
-                  {project.description}
+                  {t(`projects.items.${project.id}.description`)}
                 </p>
 
                 <div className="mt-4 flex flex-wrap gap-2">
@@ -53,7 +53,7 @@ export default function Building() {
 
               <div className="min-w-55">
                 <div className="flex items-center justify-between text-sm">
-                  <span>{project.status}</span>
+                  <span>{t(`projects.items.${project.id}.status`)}</span>
                   <span>{project.progress}%</span>
                 </div>
 

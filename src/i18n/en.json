@@ -9,24 +9,27 @@
     "highlights": "Highlights",
     "stack": "Stack",
     "building": "Building",
-    "learning": "Learning"
+    "learning": "Learning",
+    "professionalExperience": "Experience"
   },
   "hero": {
     "badge": "Available for freelance projects",
     "title": "Building software,\nautomation and\ndigital products.",
-    "subtitle": "Full Stack Developer, QA Automation Engineer and Data Analyst with 15+ years of experience.",
+    "subtitle": "Helping teams deliver reliable software through development, automation and analytics.",
     "cta": {
-      "viewProjects": "View Projects",
+      "viewProjects": "See my work",
       "contact": "Contact"
     }
   },
   "header": {
-    "name": "Diego Graf"
+    "name": "Diego Graf",
+    "openMenu": "Open navigation menu",
+    "closeMenu": "Close navigation menu"
   },
   "about": {
     "section": "ABOUT",
     "title": "More than code.",
-    "content": "I'm a software developer with experience across\nFull Stack Development, QA Automation,\nBusiness Intelligence and Mobile Applications.\n\nThroughout my career I've worked in banking,\nhealthcare, government institutions and\ncommercial platforms, helping teams build\nreliable software and improve processes through\nautomation.\n\nToday I'm focused on creating useful products,\nlearning continuously and leveraging AI-assisted\ndevelopment to build faster and smarter."
+    "content": "I'm a software developer with experience across Full Stack Development, QA Automation, Business Intelligence and Mobile Applications.\n\nThroughout my career I've worked in banking, healthcare, government institutions and commercial platforms, helping teams build reliable software and improve processes through automation.\n\nToday I'm focused on creating useful products, learning continuously and leveraging AI-assisted development to build faster and smarter."
   },
   "stack": {
     "section": "STACK",
@@ -63,7 +66,7 @@
   "highlights": {
     "stats": [
       {
-        "value": "15+",
+        "value": "20+",
         "label": "Years Experience"
       },
       {
@@ -83,7 +86,7 @@
   "quickstats": {
     "stats": [
       {
-        "value": "15+",
+        "value": "20+",
         "label": "Years Experience"
       },
       {
@@ -104,6 +107,86 @@
     "section": "CURRENTLY BUILDING",
     "title": "Products and ideas in progress.",
     "description": "A collection of projects I'm actively building, validating and improving."
+  },
+  "professionalExperience": {
+    "section": "CAREER JOURNEY",
+    "title": "Professional Experience",
+    "description": "A selection of roles and experiences that have shaped my career.",
+    "downloadCv": "Download my CV",
+    "empty": "Professional experiences will be added here soon.",
+    "showMore": "Show {{count}} more experiences",
+    "showLess": "Show fewer experiences",
+    "viewDetails": "View role details",
+    "closeDetails": "Close experience details",
+    "detailsHeading": "Role details",
+    "items": {
+      "swissMedical": {
+        "period": "2021–Present",
+        "role": "Technical Lead / Full Stack Developer",
+        "company": "Swiss Medical",
+        "description": "Supported the team in resolving production incidents within the providers web platform through log analysis and debugging.\n\nPerformed frontend and backend deployments across development, testing, and production environments.\n\nMaintained the platform and developed new features using PHP, React, Node.js, HTML, and CSS. Used AI tools such as Cursor to improve productivity, accelerate development, and enhance code quality."
+      },
+      "bosonic": {
+        "period": "2021–2025",
+        "role": "QA Automation Developer",
+        "company": "Bosonic",
+        "description": "Developed automated tests using Cypress.\n\nIntegrated test execution into Jenkins pipelines to support continuous integration and delivery.\n\nHelped ensure product quality by implementing and maintaining test frameworks."
+      },
+      "carnesValidadas": {
+        "period": "2021–2022",
+        "role": "MERN Stack Developer",
+        "company": "Carnes Validadas",
+        "description": "Maintained and fixed bugs in a commercial platform built with React, Node.js, and MongoDB.\n\nContributed to platform stability and performance improvements."
+      },
+      "freelanceProjects": {
+        "period": "2016–2020",
+        "role": "Android & PHP Developer (Freelance)",
+        "company": "Independent Projects",
+        "description": "Developed an Android app for CPCEER (Paraná), including course enrollment, a virtual ID card, news integration, and a REST API backend built with CakePHP and MySQL.\n\nBuilt a slot machine game for the Ministry of Tourism of Entre Ríos using Android Java, with user registration and reward logic.\n\nCreated an RSS news reader app for the Energy Regulator of Entre Ríos."
+      },
+      "bancoEntreRios": {
+        "period": "2009–2021",
+        "role": "Senior BI / Data Analyst",
+        "company": "Banco Entre Ríos",
+        "description": "Designed, developed, and maintained dashboards and strategic reports for senior management using SAP BusinessObjects Web Intelligence.\n\nBuilt and automated end-to-end reporting workflows, integrating data from Oracle, MySQL, CSV files, and large flat files.\n\nDeveloped advanced Excel analytical solutions with VBA macros for process automation, data consolidation, and multi-source reporting. Delivered data-driven insights, KPI analysis, and executive reporting across business units.\n\nAutomated manual reporting processes to improve efficiency, accuracy, and turnaround times. Managed large datasets for extraction, transformation, analysis, and reporting.\n\nReduced reporting and analysis time by 30% through automation in SAP BusinessObjects."
+      },
+      "miguelWaigel": {
+        "period": "2007–2009",
+        "role": "IT Support & Software Developer",
+        "company": "Miguel Waigel y Cia. S.A.",
+        "description": "Provided software and hardware support and developed tools in PHP.\n\nInstalled, configured, and administered Linux servers."
+      },
+      "educacionIt": {
+        "period": "2021–2022",
+        "role": "Android Instructor",
+        "company": "Educación IT",
+        "description": "Android Instructor at Educación IT."
+      },
+      "materiaSistemas": {
+        "period": "2016–2017",
+        "role": "PHP Developer",
+        "company": "Materia Sistemas",
+        "description": "PHP Developer."
+      },
+      "getStyle": {
+        "period": "2009–2011",
+        "role": "Web Developer",
+        "company": "GetStyle",
+        "description": "Worked as a web developer using PHP and MySQL."
+      },
+      "hoffmann": {
+        "period": "2009–2010",
+        "role": "IT Support Technician",
+        "company": "Marcelo Edmundo Hoffmann e Hijos S.A.",
+        "description": "IT Support Technician at Marcelo Edmundo Hoffmann e Hijos S.A."
+      },
+      "iosper": {
+        "period": "2004–2007",
+        "role": "Administrative Assistant",
+        "company": "IOSPER",
+        "description": "Worked as an administrative assistant and performed data entry tasks."
+      }
+    }
   },
   "projects": {
     "section": "PROJECTS",
@@ -126,6 +209,21 @@
         "title": "PF Comparer",
         "description": "Android mobile app for comparing deposit certificates in different banks.",
         "status": "Backend Active Development"
+      },
+      "bassLearningPlatform": {
+        "title": "Bass Learning Platform",
+        "description": "Interactive platform for learning and practicing bass guitar techniques.",
+        "status": "Planning"
+      },
+      "personalFinanceApp": {
+        "title": "Personal Finance App",
+        "description": "Desktop application for managing personal finances and tracking expenses.",
+        "status": "Active Development"
+      },
+      "laPatadaLandingPage": {
+        "title": "La Patada Landing Page",
+        "description": "Landing page for the La Patada rock band.",
+        "status": "Planning"
       }
     }
   },
@@ -133,19 +231,172 @@
     "section": "CURRENTLY LEARNING",
     "title": "Continuous learning.",
     "description": "Technologies, methodologies and concepts I'm actively studying and experimenting with.",
+    "specializationLabel": "Specialization",
     "progressLabel": "Progress",
-    "items": {
-      "dockerKubernetes": {
-        "title": "Docker & Kubernetes",
-        "category": "DevOps"
+    "of": "of",
+    "readMore": "Read more",
+    "readAbout": "Read about",
+    "closeDescription": "Close course description",
+    "overallProgress": "Overall progress",
+    "hideCourses": "Hide courses",
+    "viewCourses": "View {{count}} courses",
+    "inProgress": "In progress",
+    "notStarted": "Not started",
+    "completed": "Completed",
+    "certificate": {
+      "view": "View certificate",
+      "preview": "Certificate preview",
+      "open": "Open PDF",
+      "previewFallback": "The embedded preview is unavailable. Open the PDF in a new tab to view it.",
+      "close": "Close certificate preview",
+      "loading": "Loading certificate...",
+      "unavailable": "Certificate unavailable",
+      "unavailableDescription": "The PDF could not be loaded. Check that the file exists in the public folder.",
+      "frameTitle": "Certificate: {{title}}"
+    },
+    "courses": {
+      "foundationsDataEverywhere": {
+        "description": "In this first course of the Google Data Analytics Professional Certificate, I gained an overview of the field of data analytics and the role data analysts play in organizations. I explored how data can help identify opportunities and trends, improve processes, and support evidence-based decision-making. \n\nThroughout the course, I learned about the practices and processes involved in the day-to-day work of a junior data analyst, exploring the different stages of the data life cycle and the data analysis process. I also developed an understanding of fundamental concepts related to data cleaning, analysis, and visualization, along with an introduction to key tools such as spreadsheets, SQL, R, and Tableau. \n\nAdditionally, I explored the data ecosystem and the importance of analytical thinking in asking questions, interpreting information, and drawing meaningful business insights. The course also allowed me to reflect on my own analytical skills and identify opportunities for professional growth in the field of data analytics. \n\nThis training provided me with a conceptual foundation for further developing my data analytics skills and complementing my previous experience in data analysis, SQL, and software development, strengthening my focus on transforming data into meaningful information that supports decision-making."
       },
-      "modernReactPatterns": {
-        "title": "Modern React Patterns",
-        "category": "Frontend"
+      "askQuestionsDataDriven": {
+        "description": "In this second course of the Google Data Analytics Professional Certificate, I deepened my understanding of data analytics fundamentals, with a particular focus on asking effective questions, making data-driven decisions, and understanding stakeholder needs. \n\nThroughout the course, I learned how to formulate questions that guide analysis, help identify problems, and uncover insights relevant to business needs. I also developed a stronger understanding of data-driven decision-making and how to communicate analytical findings and conclusions clearly and effectively. \n\nAnother key area I explored was the use of spreadsheets as essential tools for organizing, exploring, and analyzing data. Additionally, I strengthened my structured-thinking skills, which help me approach problems logically, identify root causes, and develop evidence-based solutions. \n\nThe course also helped me understand the importance of managing stakeholder expectations and maintaining effective communication with data analytics teams, ensuring that analytical objectives remain aligned with business needs. \n\nThese skills strengthened my analytical mindset and my ability to define problems, ask relevant questions, and connect data with concrete business objectives, complementing my previous experience in data analysis, SQL, and software development."
       },
-      "aiAgentsAutomation": {
-        "title": "AI Agents & Automation",
-        "category": "AI"
+      "prepareDataExploration": {
+        "description": "In this third course of the Google Data Analytics Professional Certificate, I will build on the knowledge acquired in the previous courses and develop new practical skills to work with data efficiently, systematically, and securely. \n\nThroughout the course, I will learn to use tools such as spreadsheets and SQL to identify, extract, and work with the right data based on specific analytical objectives. I will also explore different data types, structures, and formats, understanding how these characteristics influence data processing and usage. \n\nAnother key area I will focus on is identifying bias in data, which is essential for assessing data credibility and drawing reliable conclusions. In addition, I will deepen my understanding of how spreadsheets and SQL are used to work with databases and datasets, learning how to access, extract, filter, and sort information according to analytical needs. \n\nThe course will also help me better understand the importance of open data, ethics, and privacy when handling information. Furthermore, I will learn best practices for organizing and protecting data, ensuring its security throughout the different stages of the analysis process. \n\nThese skills will help me strengthen my technical and analytical capabilities, complementing my previous experience in data analysis and SQL, and enabling me to approach analytical processes with greater critical thinking, reliability, and attention to data quality."
+      },
+      "processDataDirtyClean": {
+        "description": "In this fourth course of the Google Data Analytics Professional Certificate, I will deepen my understanding of data cleaning and validation processes, two essential steps in ensuring the quality and reliability of the information used in data analysis.\n\nThroughout the course, I will learn how to check data integrity and identify inconsistencies, errors, and other issues that could affect analytical results. I will use tools such as spreadsheets and SQL to apply data cleaning techniques, correct errors, and prepare data for further analysis.\n\nI will also develop basic SQL queries and learn how to use SQL functions to clean, transform, and organize data according to analytical objectives. In addition, I will explore methods for verifying data cleaning results and ensuring that processed data maintains its integrity and is suitable for use.\n\nAnother important aspect of the course will be learning how to document and communicate results through clear and effective data cleaning reports, making it possible to track the tasks performed and improve understanding of the process.\n\nThese skills will help me strengthen my data preparation and data quality capabilities, complementing my previous experience in data analysis and SQL while reinforcing an approach based on accuracy, reliability, and information quality."
+      },
+      "analyzeDataAnswerQuestions": {
+        "description": "In this fifth course of the Google Data Analytics Professional Certificate, I will deepen my understanding of the data analysis process, applying the knowledge acquired so far to interpret collected information and transform it into meaningful insights that support decision-making.\n\nThroughout the course, I will learn how to organize, format, and adjust data using spreadsheets and SQL, exploring different ways to structure and view information to facilitate interpretation. I will also explore data aggregation techniques to identify patterns, summarize information, and answer relevant business questions.\n\nIn addition, I will learn to use spreadsheet formulas and functions, along with SQL queries, to perform more complex calculations and operations. These tools will help me transform data, analyze relationships between variables, and generate results aligned with specific business objectives.\n\nThis training will help me strengthen my practical skills in data analysis and transformation, complementing my previous experience with SQL and data analysis while expanding my ability to turn datasets into meaningful insights that support informed decision-making."
+      },
+      "shareDataVisualization": {
+        "description": "In this sixth course of the Google Data Analytics Professional Certificate, I will deepen my understanding of data visualization and results communication, learning how to transform analytical findings into clear, effective presentations that support decision-making.\n\nThroughout the course, I will explore the importance of data visualization and how tools such as dashboards can represent information visually, reveal patterns, and communicate meaningful insights. I will also learn to use Tableau to create interactive visualizations, design dashboards, and apply filters that make data exploration easier.\n\nAnother key focus will be developing data-driven narratives through data storytelling, with the goal of presenting findings in a coherent and accessible way while connecting insights to business needs and objectives. In addition, I will learn principles and best practices for delivering effective presentations, considering data limitations, and answering audience questions clearly and confidently.\n\nThese skills will help me strengthen my ability to communicate analytical information by combining data analysis with visual representation and interpretation. This will expand my toolkit for transforming data into clear, meaningful, and actionable information that supports informed decision-making."
+      },
+      "introDataAnalysisPython": {
+        "description": "In this seventh course of the Google Data Analytics Professional Certificate, I will learn the fundamentals of Python programming and explore how this language is used in data analytics to process information, automate tasks, and solve problems efficiently.\n\nThroughout the course, I will learn essential programming concepts such as variables, data types, functions, conditional statements, and loops. I will also explore object-oriented programming principles and work with data structures such as lists, tuples, dictionaries, and sets to organize and manipulate information through code.\n\nIn addition, I will develop Python scripts to display data and perform operations, control program flow, and automate repetitive tasks. I will also learn how to import and use specialized libraries such as NumPy and pandas, which are widely used for data manipulation, transformation, and analysis.\n\nThis training will allow me to expand my technical skills and add Python to my data analytics toolkit. By combining this knowledge with my previous experience in SQL, data analysis, and software development, I will be able to tackle new analytical challenges and explore different approaches to processing data and generating meaningful insights."
+      },
+      "googleDataAnalyticsCapstone": {
+        "description": "In this eighth course of the Google Data Analytics Professional Certificate, I will have the opportunity to bring together the knowledge acquired throughout the program by developing a practical data analytics case study. The goal will be to apply the different stages of the analytical process, from asking questions and preparing data to processing, analyzing, visualizing, and using data to recommend evidence-based actions.\n\nThroughout the course, I will explore case studies based on real-world scenarios and learn how employers use these exercises to evaluate candidates' analytical skills. I will also work on developing my own case study, allowing me to demonstrate my knowledge, document my problem-solving approach, and create a project that I can add to my professional portfolio.\n\nIn addition, I will learn strategies to prepare for job opportunities in data analytics, including common interview questions, practical hiring scenarios, and resources for showcasing my projects and skills in an online portfolio. I will also explore how to incorporate artificial intelligence tools, guided by insights from Google experts, to support and enhance various data analysis tasks.\n\nThis final stage will allow me to connect technical knowledge with practical application, strengthening my ability to address business problems, develop structured analyses, and communicate meaningful findings. It will also help me showcase my previous experience in data analysis, SQL, and software development alongside the new skills acquired in data analytics."
+      },
+      "accelerateJobSearchAI": {
+        "description": "Through this supplementary course, I will learn how to use artificial intelligence tools to optimize my job search and develop a more effective strategy for achieving my professional goals. I will explore how to leverage tools such as Gemini and NotebookLM to identify my most relevant skills, define my professional profile, and organize a job search plan aligned with my experience and career objectives. \n\nThroughout the course, I will develop practical strategies for managing job applications, tailoring my professional presentation to different opportunities, and preparing for interviews. I will also learn how to use artificial intelligence to recognize my strengths, communicate my experience more effectively, and highlight the value I can bring to potential employers. \n\nAs a result, I will develop a personalized job search portfolio that will include materials such as my résumé, a professional identity statement, and a tracking document to organize and monitor my job applications. \n\nThese skills will allow me to integrate AI tools into my professional development, improve how I present my competencies, and manage my search for new opportunities with greater organization, confidence, and clarity of purpose."
+      },
+      "secureCodingSSDLC": {
+        "description": "Through this training in secure coding and the Secure Software Development Life Cycle (SSDLC), I am deepening my knowledge of how to design, develop, and maintain secure applications. I am exploring how vulnerabilities arise, how attackers can exploit them, and which practices can help prevent them from the earliest stages of development. \n\nThroughout the course, I am learning to use Linux tools to analyze logs and code, identify anomalies, and recognize potential threats. I am also developing an understanding of frameworks and tools such as MITRE ATT&CK to better understand attack techniques and connect them to real-world scenarios. In addition, I am studying how to implement application security controls, including input validation, authentication, authorization, and secure session management. \n\nAnother key focus of this training is integrating security throughout the software development life cycle. I am learning about threat modeling, static and dynamic application security testing (SAST and DAST), and shift-left practices to identify and address vulnerabilities as early as possible. I am also exploring DevSecOps principles and the automation of security checks and dependency analysis within CI/CD pipelines. \n\nThese skills complement my experience in software development and test automation, allowing me to broaden my perspective on quality and security throughout an application's life cycle. My goal is to adopt a security-first mindset from the design stage and contribute to building more robust, reliable, and resilient software solutions."
+      },
+      "owaspWebApplicationSecurity": {
+        "description": "In this course, I will learn the fundamentals of web application security using the OWASP framework, with the goal of understanding how vulnerabilities are identified and exploited and how to prevent them through secure coding practices. \n\nI will explore the architecture of modern web applications, the main risk categories defined in the OWASP Top 10, and common attack patterns. I will also learn to analyze vulnerabilities such as SQL injection, cross-site scripting (XSS), authentication flaws, and security misconfigurations, understanding their impact on application behavior, data protection, and user trust. \n\nAdditionally, I will gain hands-on experience with dynamic security testing using OWASP ZAP, a tool that will allow me to analyze running applications, intercept traffic, and identify potential vulnerabilities through automated and real-time testing.\n\nI will further develop my understanding of prevention and mitigation strategies by applying input validation, secure output handling, authentication protection, session management, and security configuration hardening techniques.\n\nBy the end of the course, I will be able to identify and assess security risks in web applications, analyze common vulnerabilities, apply secure coding best practices, and recommend structured mitigation strategies to reduce risks and strengthen application security.\n\nThis learning experience will complement my background in software development and QA Automation, allowing me to incorporate a security-focused perspective throughout the Software Development Life Cycle (SSDLC) and contribute to building more robust, reliable, and secure applications."
+      },
+      "staticCodeAnalysisSonar": {
+        "description": "In this course, I will learn how to improve code quality and analyze software security using SonarQube and SonarLint, with the goal of identifying issues early and enhancing software reliability, maintainability, and security through continuous analysis. \n\nI will begin by exploring the importance of code quality in software development and how static code analysis helps detect bugs, vulnerabilities, and maintainability issues. I will also become familiar with the SonarQube ecosystem, its architecture, and how it supports continuous code quality monitoring. \n\nNext, I will gain practical knowledge of configuring SonarQube, scanning codebases, and interpreting results through dashboards and metrics such as technical debt, reliability, and maintainability. \n\nAdditionally, I will learn how to enforce coding standards using Quality Profiles and Quality Gates, manage permissions, and integrate SonarLint into development environments to detect and fix issues in real time, enabling early remediation throughout the development process. \n\nBy the end of the course, I will be able to analyze code to identify bugs, vulnerabilities, and code smells, use SonarQube to monitor code quality metrics, and integrate static analysis tools into development workflows. \n\nThis learning experience will complement my background in software development and QA Automation, allowing me to incorporate static analysis, early defect prevention, and continuous improvement practices throughout the software development life cycle, contributing to the development of more secure, reliable, and maintainable applications."
+      },
+      "fundamentosProgramaciónJavaScriptHTMLCSS": {
+        "description": "In this course, I develop my programming fundamentals and learn to solve problems using logical thinking and essential programming concepts such as functions, loops, and conditional statements.\n\nI also gain foundational web development skills using HTML, CSS, and JavaScript, applying them to build structured, styled, and interactive web pages. I learn to work with HTML elements, organize content, apply styles through CSS classes and IDs, and add interactivity using JavaScript functions and events.\n\nAs a hands-on project, I build an interactive web page that allows users to upload images and apply custom filters, integrating elements such as buttons, sliders, and an image canvas for displaying and manipulating images.\n\nThis learning experience helps me strengthen my problem-solving skills, consolidate my JavaScript knowledge, and gain a deeper understanding of how programming logic integrates with the core technologies of web development."
+      },
+      "programacionJavaResolucionProblemasSoftware": {
+        "description": "In this course, I will learn to program in Java and strengthen my programming and problem-solving skills. I will explore algorithm design, program development, execution, and debugging, applying best practices to build efficient and reliable solutions. \n\nI will learn to use conditional statements and loops, navigate the Java API documentation, and develop custom methods and classes that work together to solve specific problems. I will also apply scientific-method-based debugging techniques and divide-and-conquer design strategies to approach complex problems in a structured way.\n\nAdditionally, I will work with open-source libraries to access and transform data, including images, website content, and CSV files. As a hands-on project, I will develop a program that analyzes data files to determine how the popularity of different baby names in the United States changes over time.\n\nThis learning experience will help me strengthen my object-oriented programming fundamentals, improve my ability to design algorithms and solve problems, and acquire practical skills for developing, testing, and maintaining Java programs in a structured way."
+      },
+      "programacionJavaMatricesListasDatosEstructurados": {
+        "description": "In this course, I will expand my knowledge of software engineering and Java programming by learning and applying new data structures. I will deepen my understanding of object-oriented programming concepts to develop more complex, organized, and reusable programs. \n\nI will learn how to read and write data to files, solve problems involving datasets, and perform quantitative analyses to calculate maximum, minimum, and average values. I will also work with data structures such as arrays, ArrayLists, iterables, collections, and maps to store, organize, and manipulate information efficiently. \n\nAdditionally, I will learn how to combine multiple classes to solve more complex problems and strengthen my ability to design modular and well-structured solutions. \n\nAs practical projects, I will develop an encryption program and another program designed to attempt to crack the implemented encryption algorithm, applying the knowledge acquired in data structures, information processing, and problem-solving. \n\nThis training will allow me to deepen my knowledge of Java, improve my ability to work with data, and strengthen my foundations in object-oriented programming and software engineering."
+      },
+      "programacionJavaPrincipiosDiseñoSoftware": {
+        "description": "In this course, I will learn to solve real-world problems using Java and multiple classes, and to develop scalable programming solutions through the use of interfaces. I will deepen my understanding of software engineering principles, recognizing that building effective solutions requires not only writing code but also applying logical thinking and structured design. \n\nI will learn to apply sorting algorithms appropriately, implement the Comparable interface, and analyze program performance through timing measurements. I will also develop the skills needed to break complex problems into multiple classes, each with its own methods, and determine when Java API classes can be used to solve specific problems. \n\nAdditionally, I will deepen my knowledge of object-oriented programming by working with interfaces and abstract classes. I will learn to compare different implementation approaches, evaluate their advantages and disadvantages, and design classes that properly encapsulate implementation details while exposing only the necessary public methods. \n\nAs practical projects, I will develop a program to analyze and sort earthquake data and a predictive text generator. I will also explore the limitations of algorithms and Java programs, along with standard Java concepts and features such as exception handling, static methods, and the java.net and java.io packages. \n\nThis training will help me strengthen my skills in software design, object-oriented programming, and problem-solving, further developing my ability to build modular, scalable, and efficient Java solutions."
+      },
+      "programacionJavaConstruirSistemaRecomendacion": {
+        "description": "In this final project, I will apply my Java programming and problem-solving skills to develop a simplified recommendation system based on the principles used by platforms such as Netflix and Amazon. I will work with movie data and user ratings to understand how data can be used to generate personalized recommendations. \n\nI will learn to read input files and transform their contents into data structures such as lists and maps. I will also work with average rating calculations and user preference analysis to identify movies that may be relevant to each individual. \n\nAdditionally, I will develop the logic required to recommend movies to a specific user based on their ratings of other movies, and I will learn how to display the resulting recommendations on a web page. \n\nThis project will allow me to integrate concepts related to Java, data structures, information processing, and recommendation algorithms, strengthening my ability to develop applications that transform data into useful insights and personalized experiences. I will also gain knowledge that I can apply to other recommendation systems, including those for books, restaurants, and products."
+      },
+      "programmingForEverybodyGettingStartedWithPython": {
+        "description": "In this course, I am learning the fundamentals of programming using Python 3. I am developing an understanding of how to build programs from a sequence of simple instructions while exploring the essential concepts of programming logic and problem-solving. \n\nThroughout this course, I am developing my skills in writing code, understanding program structure, and applying fundamental Python concepts, without requiring prior programming experience or advanced mathematical knowledge. \n\nThe course covers the first five chapters of the Python for Everybody textbook, providing me with a solid foundation for progressing to more advanced programming concepts and courses. \n\nThis training allows me to strengthen my programming fundamentals, develop my logical thinking, and prepare for new challenges in software development and data analysis."
+      },
+      "pythonDataStructures": {
+        "description": "In this course, I will deepen my Python 3 programming knowledge by learning and applying fundamental data structures. I will move beyond the basics of procedural programming and explore how to use Python's built-in data structures, such as lists, dictionaries, and tuples, to organize, process, and analyze information efficiently. \n\nThroughout this course, I will develop the skills needed to work with increasingly complex datasets, applying data structures to solve problems and perform data analysis. \n\nThe course will cover chapters 6 through 10 of the Python for Everybody textbook, allowing me to expand my programming fundamentals and prepare for more advanced challenges in Python and data analysis."
+      },
+      "usingPythonToAccessWebData": {
+        "description": "In this course, I will learn how to use the internet as a source of data, developing skills to extract, analyze, and read information from websites, as well as access data through web APIs using Python 3. \n\nI will work with widely used data formats, such as HTML, XML, and JSON, learning how to process and transform them to obtain useful information. I will also explore web scraping techniques and integration with web services through APIs. \n\nThroughout this course, I will apply my knowledge of variables, expressions, control structures, functions, Python data structures, and file handling to develop solutions for retrieving and processing information from different sources. \n\nThe course will cover chapters 11 through 13 of the Python for Everybody textbook, allowing me to expand my skills in programming, data extraction automation, and web service integration while strengthening my foundations in data processing and analysis."
+      },
+      "usingDatabasesWithPython": {
+        "description": "In this course, I will learn the fundamentals of Structured Query Language (SQL) and the basic principles of database design for storing and organizing information as part of data collection, analysis, and processing workflows. \n\nI will work with SQLite3 to create and manage databases, integrating Python 3 with SQL queries to develop data processing solutions. I will also learn how to build web crawlers and implement multi-step processes to collect, store, process, and visualize information. \n\nAdditionally, I will use the D3.js library to create basic data visualizations and understand how to present information clearly and meaningfully. \n\nThe course will cover chapters 14 and 15 of the Python for Everybody textbook, allowing me to integrate my knowledge of Python, SQL, databases, and data visualization. This training will help me strengthen my skills in developing data-driven solutions and gain a deeper understanding of the complete data lifecycle, from collection and storage to processing and presentation."        
+      },
+      "capstoneProjectUsingPythonToAccessWebData": {
+        "description": "In this specialization capstone, I will develop a series of applications using Python 3 to retrieve, process, and visualize data, integrating the knowledge and technologies acquired throughout the program. \n\nIn the first stage, I will work on practical data visualization exercises to become familiar with the tools and technologies involved. I will then design and develop my own project, selecting an available dataset or identifying new data sources to create meaningful visualizations. \n\nThroughout the project, I will apply concepts related to Python programming, data extraction and processing, databases, and data visualization, integrating each stage into complete solutions. \n\nThe project will be based on chapters 15 and 16 of the Python for Everybody textbook. It will allow me to consolidate my software development and data analysis skills while demonstrating my ability to transform raw data into meaningful visual insights that help identify patterns and draw conclusions."
+      },
+      "ciberSecurityAppliedCryptography":{
+        "description": "In this Applied Cryptography course, I will develop practical skills in using cryptographic tools and technologies to address real-world security challenges. I will learn to design, evaluate, and implement cryptographic solutions across enterprise environments and emerging technologies.\n\nI will deepen my understanding of cryptographic fundamentals, including symmetric and asymmetric encryption and Public-Key Infrastructure (PKI). I will also learn how to protect data at rest and in transit through techniques such as full-disk encryption and mechanisms for verifying data authenticity and integrity. \n\nAdditionally, I will explore the use of cryptography in network security protocols, VPNs, wireless systems, and anonymous browsing technologies such as TOR. I will study how to protect intellectual property and software integrity, as well as how secure hardware environments operate, including Hardware Security Modules (HSMs) and Trusted Execution Environments (TEEs).\n\nI will also examine the cryptographic foundations of blockchain systems, distributed ledgers, smart contracts, and secure voting systems. Finally, I will explore emerging privacy-preserving technologies, including Homomorphic Encryption, Federated Learning, Multi-Party Computation, and post-quantum cryptography.\n\nThis training will allow me to strengthen my cybersecurity knowledge and understand how to apply cryptographic principles to secure software development, data protection, and the design of resilient systems."
+      },
+      "ciberSecurityDevSecOps":{
+        "description": "In this course, I will deepen my knowledge of DevSecOps and learn how to integrate security into every stage of the software development lifecycle (SDLC). Through the content developed by Macquarie University's Cyber Skills Academy, I will gain practical knowledge of incorporating security principles into application design, development, testing, and deployment processes. \n\nI will study secure software architecture principles for building resilient systems and apply security-conscious coding practices, including API protection, access control, and web vulnerability management. I will also learn how to improve application security through static code analysis and dependency checks. \n\nAdditionally, I will explore techniques for hardening CI/CD pipelines, including Infrastructure as Code (IaC), the SLSA framework, and Software Bills of Materials (SBOMs). I will deepen my understanding of cloud-native security for Azure deployments using containers and Kubernetes, and learn about MLSecOps principles for securing machine learning models within DevSecOps workflows. \n\nI will also learn how to identify and understand attack surfaces to anticipate threats and develop defensive strategies. Throughout the course, I will explore tools and frameworks used in real-world environments, applying the shift-left security approach to incorporate security controls from the earliest stages of development and into every code commit, build, and deployment. \n\nThis training will allow me to strengthen my skills in secure software development, security control automation, and the integration of cybersecurity practices into continuous development and delivery pipelines."
+      },
+      "ciberSecuritySecurityOfAI":{
+        "description": "In this course, I will deepen my knowledge of AI security by exploring the risks, emerging threats, and defense strategies required to protect intelligent systems. Through the content developed by Macquarie University's Cyber Skills Academy, I will learn to identify vulnerabilities and understand the security challenges associated with integrating artificial intelligence into critical applications and infrastructure. \n\nI will study AI system architecture and its main security risks, including adversarial inputs, model poisoning, and data leakage. I will also learn how to assess and mitigate AI-driven cyber-physical risks in Operational Technology (OT) environments and Industrial Control Systems (ICS). \n\nAdditionally, I will explore threats related to deepfakes, misinformation, privacy violations, and the unethical use of artificial intelligence. I will learn to apply security testing strategies and technical controls, including encryption, red, blue, and purple team exercises, and model robustness assessments. \n\nI will also deepen my understanding of responsible AI principles, considering aspects such as fairness, transparency, regulatory compliance, and trust. Finally, I will examine emerging risks associated with Artificial General Intelligence (AGI) and proactive strategies for anticipating and mitigating potential threats. \n\nThis training will allow me to strengthen my cybersecurity skills in the field of artificial intelligence, combining technical knowledge, ethical awareness, and strategic thinking to contribute to the development and deployment of safer and more trustworthy AI systems."
+      },
+      "level1":{
+        "description":"I completed the first level of English, where I acquired my initial knowledge of the language and became familiar with its fundamentals, building a foundation for further developing my communication skills."
+      },      
+      "level2":{
+        "description":"I am currently taking the second level of English, where I am learning to introduce myself, build basic sentences, and communicate personal information in a simple way."
+      },
+      "level3":{
+        "description":"En este nivel desarrollaré mi capacidad para mantener conversaciones básicas en inglés sobre temas conocidos, ampliando mi vocabulario y mejorando mi comprensión."
+      },
+      "level4":{
+        "description":"Aprenderé a hablar sobre acontecimientos pasados, situaciones presentes y planes futuros, fortaleciendo mi manejo de los tiempos verbales y mi capacidad para comunicar experiencias."
+      },
+      "level5":{
+        "description":"Desarrollaré mi capacidad para expresar sentimientos, compartir opiniones y preguntar a otras personas sobre sus puntos de vista, mejorando mi fluidez en conversaciones cotidianas."
+      },
+      "level6":{
+        "description":"Aprenderé a desenvolverme en la mayoría de las situaciones cotidianas con hablantes de inglés, fortaleciendo mi comprensión auditiva y mi capacidad para comunicarme con mayor autonomía."
+      },
+      "level7":{
+        "description":"Trabajaré en expresar mis ideas y puntos de vista con claridad, participar en conversaciones con mayor naturalidad e interactuar con confianza con hablantes de inglés."
+      },
+      "level8":{
+        "description":"Profundizaré mi dominio del inglés para expresar ideas abstractas y mantener conversaciones sobre una amplia variedad de temas, adaptándome a diferentes contextos de comunicación."
+      },
+      "level9":{
+        "description":"Desarrollaré la capacidad de elaborar ideas complejas, debatir situaciones reales e hipotéticas y participar con seguridad en discusiones extensas, fortaleciendo mis habilidades de argumentación en inglés."
+      },
+      "level10":{
+        "description":"Perfeccionaré mi capacidad para presentar, defender y refinar ideas de manera eficaz, adaptando mi lenguaje, tono y estilo a diferentes audiencias y objetivos profesionales."
+      }      
+    },
+    "items": {      
+      "googleDataAnalytics": {
+        "title": "Google Data Analytics",
+        "description": "I am currently pursuing the Google Data Analytics Professional Certificate, a program focused on developing the skills needed to transform data into actionable insights that support decision-making. \n\nThroughout this training, I am deepening my understanding of the different stages of the data analysis process, from data collection, cleaning, and organization to analysis, visualization, and interpretation. I am developing my knowledge of tools and technologies such as SQL, spreadsheets, Python, and Tableau, with the goal of strengthening my ability to identify patterns, uncover opportunities, and draw meaningful conclusions from data. I am also learning to approach problems systematically, formulate business questions, assess data quality, and communicate findings clearly through reports and visualizations. \n\nThe program includes practical exercises and a case study that will allow me to apply these skills to scenarios similar to those encountered in professional environments. My goal is to combine these skills with my previous experience as a data analyst and software developer, expanding my ability to connect technical information with business needs and contribute to more informed, evidence-based, and results-oriented decision-making."
+      },
+      "secureCodingForApplicationDevelopment": {
+        "title": "Secure Coding for Application Development",
+        "description": "Through this specialization, I aim to expand and update my knowledge of secure application development, incorporating best practices for designing, building, and maintaining secure applications in modern software environments. This learning path allows me to deepen my understanding of secure coding principles, the Secure Software Development Lifecycle (SSDLC), OWASP-based vulnerability analysis, and static code analysis tools. \n\nThroughout these three courses, I will strengthen my knowledge of secure coding, software risk management, and security analysis in Linux environments. I will also explore the OWASP Top 10 vulnerabilities and web attack patterns found in real-world scenarios, with the goal of understanding how security weaknesses arise and what measures can be taken to prevent them. In addition, I will learn to use tools such as SonarQube and SonarLint to identify and remediate vulnerabilities in the early stages of development. \n\nAnother key focus of this specialization is the adoption of DevSecOps practices, automation, and continuous security monitoring within development workflows. These skills will help me strengthen my ability to identify vulnerabilities, apply mitigation strategies, and integrate security throughout the software development lifecycle. \n\nAs part of this specialization, I will complete hands-on exercises focused on secure coding, vulnerability analysis, and code quality improvement. Activities include identifying vulnerabilities in application code, analyzing OWASP-based attacks, performing dynamic security testing with OWASP ZAP, and applying static code analysis using SonarQube and SonarLint to detect and remediate issues. \n\nThe final practical project will bring together secure coding, testing, and DevSecOps practices. This project will allow me to apply the knowledge acquired to analyze, fix, and validate application security in a simulated real-world environment. In this way, I will strengthen my secure development skills and incorporate security best practices into my existing software development and QA experience."
+      },
+      "fundamentosDeProgramacionJavaEIngenieriaDeSoftware": {
+        "title": "Java Programming and Software Engineering Fundamentals Specialization.",
+        "description": "In this specialization, I develop my Java programming skills, working with one of the most widely used languages in software development and a technology relevant to the Android ecosystem. Throughout this five-course series, I explore core programming concepts and strengthen my ability to solve problems through algorithm design, coding, testing, and debugging.\n\nThrough a hands-on, project-based approach, I apply the concepts I learn to build practical solutions and develop a portfolio that demonstrates my technical skills. The projects include an interactive web page for applying image filters, analyzing CSV data files, creating an encryption program, and building a predictive text generator.\n\nAs a final project, I develop a recommendation engine similar to those used by platforms such as Netflix and Amazon, bringing together the knowledge and skills acquired throughout the specialization.\n\nThis learning experience helps me strengthen my programming fundamentals, improve my problem-solving abilities, and expand my skill set for software development."
+      },
+      "pythonForEverybodySpecialization": {
+        "title": "Python for Everybody Specialization",
+        "description": "In this specialization, I will learn fundamental programming concepts, including data structures, application programming interfaces (APIs) for accessing network services, and databases, using Python as my primary programming language. \n\nThroughout this program, I will develop skills in data retrieval, processing, and analysis, integrating different technologies to transform information into useful insights. \n\nAs a final project, I will apply the knowledge I acquire to design and develop my own applications for data retrieval, processing, and visualization. \n\nThis specialization will allow me to strengthen my Python programming skills, expand my experience in data handling, and consolidate my foundations in software development and data analysis."
+      },
+      "cyberSecurityDevOpsSpecialization": {
+        "title": "Cyber Security: DevOps Specialization",
+        "description": "In this specialization, I will develop advanced cybersecurity knowledge through three industry-aligned courses: Cyber Security: Applied Cryptography, Cyber Security: DevSecOps, and Cyber Security: Security of AI. This program will allow me to deepen my understanding of data protection, secure software development, and artificial intelligence security. \n\nI will begin by studying cryptographic principles and techniques to protect sensitive data at rest, in transit, and during processing. Next, I will learn how to integrate security into every stage of the software development lifecycle through DevSecOps practices, automated security controls in CI/CD pipelines, and cloud-native security. \n\nI will also explore strategies for protecting artificial intelligence systems against threats such as adversarial attacks, data poisoning, and model theft, with the goal of contributing to the development of robust and trustworthy AI solutions. \n\nThrough hands-on projects, I will apply cryptographic tools, implement security controls in DevOps pipelines, and develop defense strategies for AI models. These activities will allow me to work with scenarios that simulate real-world cybersecurity challenges in enterprise environments. \n\nDeveloped by Macquarie University's Cyber Skills Academy, this specialization combines academic foundations with practical applications. Upon completion, I will strengthen my ability to design, develop, and manage secure systems that integrate software, cryptography, and artificial intelligence, expanding my expertise in secure development and modern cyber defense."
+      },
+      "playwrightPowerTechniques": {
+        "title": "Playwright Power Techniques: Fast and Reliable Web Testing",
+        "description": "Through this course, I am updating and deepening my knowledge of QA Automation, revisiting concepts from my previous experience and exploring new techniques and tools to stay up to date with current automated testing technologies. \n\nThe course helps me incorporate advanced Playwright techniques to develop automated tests for web applications that are fast, stable, and compatible with different browsers. I am also reinforcing my knowledge of browser contexts, parallel test execution, and visual regression testing to detect bugs and ensure interface quality. \n\nDeepening my understanding of automating real-world scenarios, such as login flows, file uploads, and test integration into CI/CD pipelines, is another objective of this course. Through hands-on exercises and debugging techniques, I am updating my practices to identify and resolve issues with flaky tests, run tests in headless mode, and automate workflows using GitHub Actions and GitLab CI. \n\nThis training allows me to complement my experience with current tools, technologies, and best practices, strengthening my skills in designing, maintaining, and optimizing automated tests, improving software reliability, and integrating efficient testing processes into modern development and DevOps environments."
+      },
+      "supervisedMachineLearning": {
+        "title": "Supervised Machine Learning: Regression and Classification",
+        "description": "In this course of the Machine Learning Specialization, I will learn the fundamentals of machine learning and develop practical skills in building predictive models using Python and widely used libraries such as NumPy and scikit-learn. \n\nI will work with supervised learning techniques to solve prediction and binary classification problems by implementing linear regression and logistic regression models. Throughout the course, I will learn how to prepare data, train models, and understand how these techniques identify patterns and generate predictions from available information. \n\nThis specialization, developed in collaboration between DeepLearning.AI and Stanford Online, will allow me to progressively explore fundamental machine learning concepts, including multiple linear regression, neural networks, decision trees, clustering algorithms, dimensionality reduction, and recommendation systems. \n\nI will also study best practices for evaluating and tuning models, improving their performance, and adopting a data-centric approach to developing more effective artificial intelligence solutions. \n\nThis training will allow me to strengthen my Python skills, expand my data analysis capabilities, and build a solid foundation in artificial intelligence and machine learning, with the goal of applying this knowledge to real-world software development and data analysis problems."
+      },
+      "claude101": {
+        "title": "Claude 101",
+        "description": "I am currently taking Claude 101, an introductory course focused on integrating Claude into everyday work. Throughout the course, I am learning the fundamentals of effective prompt writing and how to use features such as Projects, Artifacts, and Skills. I am also exploring Connectors, Enterprise Search, and Research to integrate Claude with workplace tools, organizational knowledge, and information available on the web. \n\nAdditionally, I am learning how Claude Chat, Cowork, and Code work within the desktop application and how they can support different types of tasks and professional roles. Finally, I am exploring tools and solutions across the Claude ecosystem, including Claude Code, Claude Tag, Claude Design, Claude for Microsoft 365, and Claude in Chrome."
+      },
+      "openEnglish": {
+        "title": "Open English",
+        "description": "I am currently taking Open English, a program for learning English that allows me to improve my communication skills in this language. Through online classes, interactive exercises, and conversation practice, I am strengthening my listening comprehension, oral expression, reading, and writing skills in English. \n\nThe program offers me the opportunity to learn at my own pace, adapting the content to my needs and specific goals. Additionally, I am participating in activities that encourage the practice of the language in real-world contexts, which helps me gain confidence and fluency in communication. \n\nThis training will allow me to expand my linguistic competencies, facilitating interaction with people from different cultures and improving my professional opportunities in international environments."
       }
     }
   },
@@ -167,6 +418,15 @@
     "linkedInLabel": "LinkedIn",
     "linkedInHref": "https://www.linkedin.com/in/diegograf/",
     "githubLabel": "GitHub",
-    "githubHref": "https://github.com/diegorafaelgraf"
+    "githubHref": "https://github.com/diegorafaelgraf",
+    "whatsappLabel": "WhatsApp",
+    "whatsappHref": "https://wa.me/5493434676091"
+  },
+  "footer": {
+    "credit": "Designed and developed by Diego Graf",
+    "builtWith": "Built with",
+    "source": "View source code",
+    "contact": "Contact",
+    "copyright": "© {{year}} Diego Graf. All rights reserved."
   }
 }
