@@ -2,7 +2,7 @@ import { FaLinkedin, FaGithub, FaMailBulk } from 'react-icons/fa';
 import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 
-import profile from '../../assets/images/profile.jpg';
+import profile from '../../assets/images/profile.webp';
 
 // Hero section component that displays the main introduction, title, subtitle, and call-to-action buttons
 export default function Hero() {

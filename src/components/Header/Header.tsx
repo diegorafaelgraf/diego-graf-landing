@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'; 
 import { useTranslation } from 'react-i18next';
 import { Menu, X } from 'lucide-react';
-import logo from '../../assets/logo.png';
+import logo from '../../assets/logo.webp';
 import styles from './Header.module.css';
 
 const navItems = [
