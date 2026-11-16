@@ -232,6 +232,7 @@
       "view": "Ver certificado",
       "preview": "Vista previa del certificado",
       "open": "Abrir PDF",
+      "previewFallback": "La vista previa integrada no está disponible. Abre el PDF en una pestaña nueva para verlo.",
       "close": "Cerrar vista previa del certificado",
       "loading": "Cargando certificado...",
       "unavailable": "Certificado no disponible",

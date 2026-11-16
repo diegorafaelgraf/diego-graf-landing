@@ -17,6 +17,7 @@ export default function CourseItem({ course }: CourseItemProps) {
   const [isCertificateLoading, setIsCertificateLoading] = useState(false);
   const [hasCertificateError, setHasCertificateError] = useState(false);
 
+  // Handle the opening and closing of the certificate dialog based on the isCertificateOpen state
   useEffect(() => {
     const dialog = dialogRef.current;
 
@@ -31,6 +32,7 @@ export default function CourseItem({ course }: CourseItemProps) {
     }
   }, [isCertificateOpen]);
 
+  // Handle the Escape key to close the certificate dialog when it is open
   useEffect(() => {
     if (!isCertificateOpen) {
       return;
@@ -46,6 +48,7 @@ export default function CourseItem({ course }: CourseItemProps) {
     return () => window.removeEventListener('keydown', handleKeyDown);
   }, [isCertificateOpen]);
 
+  // Handle the opening of the certificate dialog and check if the certificate is available and in PDF format
   const handleOpenCertificate = async () => {
     if (!course.certificate) {
       return;
@@ -67,6 +70,7 @@ export default function CourseItem({ course }: CourseItemProps) {
     }
   };
 
+  // Render the course item with its title, status, progress, description, and certificate preview
   return (
     <div className="flex gap-4 border-t border-zinc-800 py-5">
       <div className="mt-1 shrink-0">
@@ -124,6 +128,7 @@ export default function CourseItem({ course }: CourseItemProps) {
             {t('learning.readMore')}
           </button>
 
+          {/* Certificate Button */}
           {isCompleted && course.certificate && (
             <>
               <button
@@ -135,82 +140,101 @@ export default function CourseItem({ course }: CourseItemProps) {
                 <Eye size={14} aria-hidden="true" />
               </button>
 
-            <dialog
-              ref={dialogRef}
-              aria-labelledby="certificate-dialog-title"
-              onClose={() => setIsCertificateOpen(false)}
-              onClick={(event) => {
-                if (event.target === event.currentTarget) {
-                  setIsCertificateOpen(false);
-                }
-              }}
-              className="m-auto h-[min(92dvh,900px)] w-[calc(100vw-1rem)] max-w-5xl overflow-hidden rounded-lg border border-zinc-800 bg-zinc-950 p-0 text-zinc-100 shadow-2xl backdrop:bg-black/80 sm:w-[calc(100vw-2rem)]"
-            >
-              <div className="flex h-full min-h-0 flex-col">
-                <div className="flex shrink-0 items-center justify-between gap-3 border-b border-zinc-800 px-4 py-3 sm:px-6">
-                  <div className="min-w-0">
-                    <p className="text-xs font-medium uppercase text-zinc-500">
-                      {t('learning.certificate.preview')}
-                    </p>
-                    <h2 id="certificate-dialog-title" className="truncate text-sm font-semibold text-zinc-100 sm:text-base">
-                      {course.title}
-                    </h2>
-                  </div>
-
-                  <div className="flex shrink-0 items-center gap-2">
-                    {!isCertificateLoading && !hasCertificateError && (
-                      <a
-                        href={course.certificate}
-                        target="_blank"
-                        rel="noreferrer"
-                        className="inline-flex items-center gap-2 rounded-md border border-zinc-700 px-3 py-2 text-sm text-zinc-300 transition hover:border-zinc-500 hover:text-white"
-                      >
-                        <span className="hidden sm:inline">{t('learning.certificate.open')}</span>
-                        <ExternalLink size={16} aria-hidden="true" />
-                      </a>
-                    )}
-
-                    <button
-                      type="button"
-                      onClick={() => setIsCertificateOpen(false)}
-                      aria-label={t('learning.certificate.close')}
-                      className="flex h-10 w-10 items-center justify-center rounded-md text-zinc-400 transition hover:bg-zinc-800 hover:text-white"
-                    >
-                      <X size={20} aria-hidden="true" />
-                    </button>
-                  </div>
-                </div>
-
-                <div className="min-h-0 flex-1 bg-zinc-900">
-                  {isCertificateLoading ? (
-                    <div className="flex h-full items-center justify-center px-6 text-sm text-zinc-400">
-                      {t('learning.certificate.loading')}
-                    </div>
-                  ) : hasCertificateError ? (
-                    <div className="flex h-full flex-col items-center justify-center gap-3 px-6 text-center">
-                      <AlertCircle size={28} className="text-zinc-500" aria-hidden="true" />
-                      <h3 className="font-medium text-zinc-200">
-                        {t('learning.certificate.unavailable')}
-                      </h3>
-                      <p className="max-w-md text-sm text-zinc-400">
-                        {t('learning.certificate.unavailableDescription')}
+              {/* Render the certificate dialog when it is open */} 
+              <dialog
+                ref={dialogRef}
+                aria-labelledby="certificate-dialog-title"
+                onClose={() => setIsCertificateOpen(false)}
+                onClick={(event) => {
+                  if (event.target === event.currentTarget) {
+                    setIsCertificateOpen(false);
+                  }
+                }}
+                className="m-auto h-[min(92dvh,900px)] w-[calc(100vw-1rem)] max-w-5xl overflow-hidden rounded-lg border border-zinc-800 bg-zinc-950 p-0 text-zinc-100 shadow-2xl backdrop:bg-black/80 sm:w-[calc(100vw-2rem)]"
+              >
+                <div className="flex h-full min-h-0 flex-col">
+                  <div className="flex shrink-0 items-center justify-between gap-3 border-b border-zinc-800 px-4 py-3 sm:px-6">
+                    <div className="min-w-0">
+                      <p className="text-xs font-medium uppercase text-zinc-500">
+                        {t('learning.certificate.preview')}
                       </p>
+                      <h2 id="certificate-dialog-title" className="truncate text-sm font-semibold text-zinc-100 sm:text-base">
+                        {course.title}
+                      </h2>
                     </div>
-                  ) : (
-                    <iframe
-                      src={course.certificate}
-                      title={t('learning.certificate.frameTitle', { title: course.title })}
-                      className="h-full w-full border-0 bg-white"
-                    />
-                  )}
+
+                    <div className="flex shrink-0 items-center gap-2">
+                      {!isCertificateLoading && !hasCertificateError && (
+                        <a
+                          href={course.certificate}
+                          target="_blank"
+                          rel="noreferrer"
+                          aria-label={t('learning.certificate.open')}
+                          className="inline-flex items-center gap-2 rounded-md border border-zinc-700 px-3 py-2 text-sm text-zinc-300 transition hover:border-zinc-500 hover:text-white"
+                        >
+                          <span className="hidden sm:inline">{t('learning.certificate.open')}</span>
+                          <ExternalLink size={16} aria-hidden="true" />
+                        </a>
+                      )}
+
+                      <button
+                        type="button"
+                        onClick={() => setIsCertificateOpen(false)}
+                        aria-label={t('learning.certificate.close')}
+                        className="flex h-10 w-10 items-center justify-center rounded-md text-zinc-400 transition hover:bg-zinc-800 hover:text-white"
+                      >
+                        <X size={20} aria-hidden="true" />
+                      </button>
+                    </div>
+                  </div>
+
+                  <div className="min-h-0 flex-1 bg-zinc-900">
+                    {isCertificateLoading ? (
+                      <div className="flex h-full items-center justify-center px-6 text-sm text-zinc-400">
+                        {t('learning.certificate.loading')}
+                      </div>
+                    ) : hasCertificateError ? (
+                      <div className="flex h-full flex-col items-center justify-center gap-3 px-6 text-center">
+                        <AlertCircle size={28} className="text-zinc-500" aria-hidden="true" />
+                        <h3 className="font-medium text-zinc-200">
+                          {t('learning.certificate.unavailable')}
+                        </h3>
+                        <p className="max-w-md text-sm text-zinc-400">
+                          {t('learning.certificate.unavailableDescription')}
+                        </p>
+                      </div>
+                    ) : (
+                      <>
+                        <div className="flex h-full flex-col items-center justify-center gap-4 px-6 text-center lg:hidden">
+                          <p className="max-w-sm text-sm leading-relaxed text-zinc-300">
+                            {t('learning.certificate.previewFallback')}
+                          </p>
+                          <a
+                            href={course.certificate}
+                            target="_blank"
+                            rel="noreferrer"
+                            className="inline-flex items-center gap-2 rounded-md border border-zinc-700 px-4 py-2.5 text-sm font-medium text-zinc-200 transition hover:border-zinc-500 hover:bg-zinc-800 hover:text-white"
+                          >
+                            {t('learning.certificate.open')}
+                            <ExternalLink size={16} aria-hidden="true" />
+                          </a>
+                        </div>
+                        <iframe
+                          src={course.certificate}
+                          title={t('learning.certificate.frameTitle', { title: course.title })}
+                          className="hidden h-full w-full border-0 bg-white lg:block"
+                        />
+                      </>
+                    )}
+                  </div>
                 </div>
-              </div>
-            </dialog>
+              </dialog>
             </>
           )}
         </div>
       </div>
 
+      {/* Description Dialog */}
       {isDescriptionOpen && (
         <div
           className="fixed inset-0 z-50 flex items-center justify-center bg-black/70 px-6 backdrop-blur-sm"

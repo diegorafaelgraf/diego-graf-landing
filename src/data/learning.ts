@@ -51,8 +51,8 @@ const learning: LearningItem[] = [
       {
         id: 'prepareDataExploration',
         title: 'Prepare Data for Exploration',
-        status: 'not-started',
-        progress: 0,
+        status: 'in-progress',
+        progress: 10,
       },
       {
         id: 'processDataDirtyClean',

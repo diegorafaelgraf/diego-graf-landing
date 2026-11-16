@@ -4,12 +4,13 @@ import { useTranslation } from 'react-i18next';
 
 import profile from '../../assets/images/profile.jpg';
 
+// Hero section component that displays the main introduction, title, subtitle, and call-to-action buttons
 export default function Hero() {
   const { t } = useTranslation();
   return (
     <section
       id="hero"
-      className="scroll-mt-14.25 mx-auto flex min-h-[90vh] max-w-6xl flex-col items-center justify-center gap-12 px-6 pt-8 sm:scroll-mt-16.25 md:flex-row md:pt-0 lg:scroll-mt-18.25"
+      className="scroll-mt-14.25 mx-auto flex min-h-[90vh] max-w-6xl flex-col items-center justify-center gap-12 px-6 pt-8 sm:scroll-mt-16.25 md:flex-row md:pt-8 lg:scroll-mt-18.25"
     >
       <motion.div
         initial={{ opacity: 0, y: 25 }}
@@ -21,7 +22,7 @@ export default function Hero() {
           {t('hero.badge')}
         </span>
 
-        <h1 className="mt-6 max-w-2xl text-5xl font-bold leading-tight md:text-7xl">
+        <h1 className="mt-6 max-w-2xl text-4xl font-bold leading-tight sm:text-5xl md:text-5xl lg:text-6xl xl:text-7xl">
           {t('hero.title').split('\n').map((line, idx) => (
             <span key={idx}>
               {line}
@@ -34,17 +35,17 @@ export default function Hero() {
           {t('hero.subtitle')}
         </p>
 
-        <div className="mt-8 flex flex-wrap gap-4">
+        <div className="mt-8 flex flex-wrap gap-4 md:flex-nowrap md:gap-2 lg:gap-4">
           <a
             href="#building"
-            className="rounded-lg bg-blue-600 px-6 py-3 font-medium hover:bg-blue-500"
+            className="rounded-lg bg-blue-600 px-6 py-3 font-medium hover:bg-blue-500 md:px-3 lg:px-6"
           >
             {t('hero.cta.viewProjects')}
           </a>
 
           <a
             href="#contact"
-            className="rounded-lg border border-zinc-700 px-6 py-3 font-medium hover:border-zinc-500"
+            className="rounded-lg border border-zinc-700 px-6 py-3 font-medium hover:border-zinc-500 md:px-3 lg:px-6"
           >
             {t('hero.cta.contact')}
           </a>
@@ -80,12 +81,12 @@ export default function Hero() {
         initial={{ opacity: 0, scale: 0.95 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.8 }}
-        className="flex justify-center"
+        className="flex justify-center md:shrink-0"
       >
         <img
           src={profile}
           alt={t('header.name')}
-          className="h-105 w-105 rounded-xl object-cover border border-zinc-800"
+          className="h-105 w-105 rounded-xl border border-zinc-800 object-cover md:h-80 md:w-80 lg:h-105 lg:w-105"
         />
       </motion.div>
     </section>

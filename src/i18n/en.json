@@ -232,6 +232,7 @@
       "view": "View certificate",
       "preview": "Certificate preview",
       "open": "Open PDF",
+      "previewFallback": "The embedded preview is unavailable. Open the PDF in a new tab to view it.",
       "close": "Close certificate preview",
       "loading": "Loading certificate...",
       "unavailable": "Certificate unavailable",
