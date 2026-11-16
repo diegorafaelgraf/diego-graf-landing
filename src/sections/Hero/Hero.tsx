@@ -86,6 +86,8 @@ export default function Hero() {
         <img
           src={profile}
           alt={t('header.name')}
+          loading="eager"
+          fetchPriority="high"
           className="h-105 w-105 rounded-xl border border-zinc-800 object-cover md:h-80 md:w-80 lg:h-105 lg:w-105"
         />
       </motion.div>

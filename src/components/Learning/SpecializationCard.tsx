@@ -43,7 +43,7 @@ export default function SpecializationCard({
                     <span className="rounded-full bg-blue-500/10 px-2.5 py-1 text-xs font-medium text-blue-400">
                       {t('learning.specializationLabel')}
                     </span>
-                    <span className="text-sm text-zinc-500">
+                    <span className="text-sm text-zinc-400">
                       {item.provider}
                     </span>
                   </div>
@@ -151,7 +151,7 @@ export default function SpecializationCard({
               <X size={20} />
             </button>
 
-            <span className="text-sm text-zinc-500">
+            <span className="text-sm text-zinc-400">
               {item.provider}
             </span>
 

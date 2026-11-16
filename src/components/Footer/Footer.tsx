@@ -15,7 +15,7 @@ export default function Footer() {
               {t('footer.credit')}
             </p>
             <div className="mt-3 flex flex-wrap items-center gap-2">
-              <span className="mr-1 text-xs text-zinc-500">
+              <span className="mr-1 text-xs text-zinc-400">
                 {t('footer.builtWith')}
               </span>
               {technologies.map((technology) => (
@@ -49,7 +49,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="mt-8 border-t border-zinc-800 pt-5 text-xs text-zinc-500">
+        <div className="mt-8 border-t border-zinc-800 pt-5 text-xs text-zinc-400">
           <p>
             {t('footer.copyright', { year: new Date().getFullYear() })}
           </p>
