@@ -7,6 +7,7 @@ import Contact from './sections/Contact/Contact';
 import Highlights from './sections/Highlights/Highlights';
 import Learning from './sections/Learning/Learning';
 import ProfessionalExperience from './sections/ProfessionalExperience/ProfessionalExperience';
+import Footer from './components/Footer/Footer';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Learning />
         <Contact />
       </main>
+      <Footer />
     </div>
   );
 }
