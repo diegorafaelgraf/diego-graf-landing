@@ -209,6 +209,21 @@
         "title": "PF Comparer",
         "description": "Android mobile app for comparing deposit certificates in different banks.",
         "status": "Backend Active Development"
+      },
+      "bassLearningPlatform": {
+        "title": "Bass Learning Platform",
+        "description": "Interactive platform for learning and practicing bass guitar techniques.",
+        "status": "Planning"
+      },
+      "personalFinanceApp": {
+        "title": "Personal Finance App",
+        "description": "Desktop application for managing personal finances and tracking expenses.",
+        "status": "Active Development"
+      },
+      "laPatadaLandingPage": {
+        "title": "La Patada Landing Page",
+        "description": "Landing page for the La Patada rock band.",
+        "status": "Planning"
       }
     }
   },

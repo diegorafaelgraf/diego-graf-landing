@@ -22,4 +22,25 @@ export const baseProjects = [
     github: '',
     demo: '',
   },
+  {
+    id: 'bassLearningPlatform',
+    progress: 0,
+    technologies: ['React', 'Typescript', 'TailwindCSS', 'Vite', 'Node.js', 'Express', 'MongoDB', 'Mongoose', 'JWT Authentication', 'Docker', 'Docker Compose'],
+    github: '',
+    demo: '',
+  }, 
+  {
+    id: 'personalFinanceApp',
+    progress: 5,
+    technologies: ['React', 'Typescript', 'TailwindCSS', 'Vite', 'Node.js', 'Nest.js', 'MongoDB', 'Mongoose', 'Electron'],
+    github: 'https://github.com/diegorafaelgraf/finanzas-personales',
+    demo: '',
+  },
+  {
+    id: 'laPatadaLandingPage',
+    progress: 0,
+    technologies: ['React', 'Typescript', 'TailwindCSS', 'Vite'],
+    github: '',
+    demo: '',
+  }
 ] as const;

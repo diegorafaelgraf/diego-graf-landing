@@ -209,6 +209,21 @@
         "title": "PF Comparer",
         "description": "Aplicación móvil Android para comparar plazos fijos en diferentes bancos.",
         "status": "Desarrollo activo del backend"
+      },
+      "bassLearning": {
+        "title": "Bass Learning",
+        "description": "Aplicación móvil Android para aprender a tocar el bajo eléctrico mediante lecciones interactivas y ejercicios prácticos.",
+        "status": "Desarrollo activo"
+      },
+      "personalFinanceApp": {
+        "title": "Personal Finance App",
+        "description": "Aplicación de escritorio para gestionar finanzas personales y rastrear gastos.",
+        "status": "Planificación"
+      },
+      "laPatadaLandingPage": {
+        "title": "La Patada Landing Page",
+        "description": "Página web para la banda de rock La Patada.",
+        "status": "Planificación"
       }
     }
   },
