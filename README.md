@@ -1,39 +1,39 @@
 # Diego Portfolio
 
-Landing page personal para presentar perfil profesional, stack tecnológico, proyectos en curso y canales de contacto.
+Personal landing page showcasing my professional profile, tech stack, current projects, and contact channels.
 
-## Descripción
+## Overview
 
-Este proyecto es una web tipo landing page desarrollada con React + TypeScript + Vite. No tiene backend ni conexiones a APIs externas; el contenido es estático y se gestiona desde componentes y archivos de configuración local.
+This project is a personal landing page built with React, TypeScript, and Vite. It has no backend or external API connections; its content is static and managed through local components and configuration files.
 
-La página está pensada para:
+The page is designed to:
 
-- presentar la identidad profesional
-- mostrar experiencia y áreas de trabajo
-- destacar tecnologías y herramientas
-- difundir proyectos activos y aprendizaje continuo
-- facilitar contacto con redes sociales y correo
+- present my professional identity
+- showcase my experience and areas of expertise
+- highlight technologies and tools
+- share active projects and ongoing learning
+- make it easy to get in touch through social media and email
 
-## Stack
+## Tech Stack
 
 - React 19
 - TypeScript
 - Vite
-- CSS Modules / CSS en componentes
-- Framer Motion para animaciones
-- i18next para internacionalización
-- React Icons y Lucide React para iconografía
+- CSS Modules / component-level CSS
+- Framer Motion for animations
+- i18next for internationalization
+- React Icons and Lucide React for icons
 
-## Características principales
+## Key Features
 
-- Diseño moderno y enfocado en una landing personal
-- Secciones claras: hero, about, highlights, stack, building, learning y contact
-- Navegación con anchors internos
-- Soporte de idiomas con archivos JSON de traducción
-- Animaciones sutiles para mejorar la experiencia visual
-- Sin dependencias de backend ni autenticación
+- Modern design focused on a personal landing page
+- Clear sections: hero, about, highlights, stack, building, learning, and contact
+- Navigation using internal anchors
+- Language support with JSON translation files
+- Subtle animations to enhance the user experience
+- No backend dependencies or authentication
 
-## Estructura del proyecto
+## Project Structure
 
 ```bash
 src/
@@ -62,60 +62,60 @@ src/
 └── main.tsx
 ```
 
-## Requisitos
+## Requirements
 
-- Node.js 18 o superior
-- npm o pnpm
+- Node.js 18 or later
+- npm or pnpm
 
-## Instalación
+## Installation
 
 ```bash
 npm install
 ```
 
-## Scripts disponibles
+## Available Scripts
 
 ```bash
 npm run dev
 ```
-Inicia el servidor de desarrollo de Vite.
+Starts the Vite development server.
 
 ```bash
 npm run build
 ```
-Genera la versión de producción.
+Creates a production build.
 
 ```bash
 npm run preview
 ```
-Sirve la build localmente para comprobar el resultado final.
+Serves the local production build so you can review it.
 
 ```bash
 npm run lint
 ```
-Ejecuta ESLint para revisar el código.
+Runs ESLint to check the code.
 
-## Cómo se maneja el contenido
+## Managing Content
 
-El contenido principal de la landing está localizado en:
+The landing page content is located in:
 
-- archivos de traducción dentro de [src/i18n](src/i18n)
-- datos estructurados en [src/data](src/data)
-- secciones en [src/sections](src/sections)
+- translation files in [src/i18n](src/i18n)
+- structured data in [src/data](src/data)
+- page sections in [src/sections](src/sections)
 
-Esto permite modificar textos, proyectos, cursos o redes sociales sin necesidad de backend.
+This makes it possible to update text, projects, courses, and social links without a backend.
 
-## Nota importante
+## Important Note
 
-Esta web es una landing estática orientada a presentación profesional. No hay formularios con envío de datos ni integración con bases de datos ni servicios del lado del servidor. La información se presenta directamente en el frontend.
+This is a static landing page for professional presentation. It does not include data-submitting forms, database connections, or server-side services. Information is rendered directly on the frontend.
 
-## Despliegue
+## Deployment
 
-Se puede desplegar fácilmente en cualquier servicio estático como:
+The site can be deployed to any static hosting service, such as:
 
 - Vercel
 - Netlify
 - GitHub Pages
 - Cloudflare Pages
 
-Solo requiere publicar la carpeta de build generada por Vite.
+Publish the production build generated in the `dist` directory.
