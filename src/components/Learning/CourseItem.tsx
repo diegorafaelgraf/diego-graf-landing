@@ -94,7 +94,7 @@ export default function CourseItem({ course }: CourseItemProps) {
           {course.title}
         </h4>
 
-        <div className="mt-2 flex items-center gap-3 text-sm text-zinc-500">
+        <div className="mt-2 flex items-center gap-3 text-sm text-zinc-400">
           {isCompleted && <span>{t('learning.completed')}</span>}
 
           {isInProgress && (
@@ -155,7 +155,7 @@ export default function CourseItem({ course }: CourseItemProps) {
                 <div className="flex h-full min-h-0 flex-col">
                   <div className="flex shrink-0 items-center justify-between gap-3 border-b border-zinc-800 px-4 py-3 sm:px-6">
                     <div className="min-w-0">
-                      <p className="text-xs font-medium uppercase text-zinc-500">
+                      <p className="text-xs font-medium uppercase text-zinc-400">
                         {t('learning.certificate.preview')}
                       </p>
                       <h2 id="certificate-dialog-title" className="truncate text-sm font-semibold text-zinc-100 sm:text-base">

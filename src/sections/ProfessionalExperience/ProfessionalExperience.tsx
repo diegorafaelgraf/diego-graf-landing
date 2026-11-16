@@ -69,7 +69,7 @@ export default function ProfessionalExperience() {
             <p className="text-zinc-300">{t(`${translationKey}.company`)}</p>
           </div>
 
-          {location && <p className="mt-1 text-sm text-zinc-500">{location}</p>}
+          {location && <p className="mt-1 text-sm text-zinc-400">{location}</p>}
 
           <button
             type="button"
@@ -199,14 +199,14 @@ export default function ProfessionalExperience() {
             {t(`professionalExperience.items.${selectedExperience.id}.location`, {
               defaultValue: '',
             }) && (
-              <p className="mt-1 text-sm text-zinc-500">
+              <p className="mt-1 text-sm text-zinc-400">
                 {t(`professionalExperience.items.${selectedExperience.id}.location`, {
                   defaultValue: '',
                 })}
               </p>
             )}
             <div className="my-6 h-px bg-zinc-800" />
-            <h3 className="mb-3 text-sm font-semibold uppercase tracking-wider text-zinc-500">
+            <h3 className="mb-3 text-sm font-semibold uppercase tracking-wider text-zinc-400">
               {t('professionalExperience.detailsHeading')}
             </h3>
             <p className="whitespace-pre-line leading-relaxed text-zinc-300">

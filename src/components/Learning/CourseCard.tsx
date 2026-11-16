@@ -25,7 +25,7 @@ export default function CourseCard({ item }: CourseCardProps) {
           </div>
 
           <div className="min-w-0 flex-1">
-            <span className="text-sm text-zinc-500">
+            <span className="text-sm text-zinc-400">
               {item.provider}
             </span>
 
@@ -101,7 +101,7 @@ export default function CourseCard({ item }: CourseCardProps) {
               <X size={20} />
             </button>
 
-            <span className="text-sm text-zinc-500">
+            <span className="text-sm text-zinc-400">
               {item.provider}
             </span>
 
