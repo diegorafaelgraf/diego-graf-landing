@@ -76,8 +76,8 @@ export default function Hero() {
       </motion.div>
 
       <motion.div
-        initial={{ opacity: 0, y: 25 }}
-        animate={{ opacity: 1, y: 0 }}
+        initial={{ y: 25 }}
+        animate={{ y: 0 }}
         transition={{ duration: 0.6, delay: 0.15 }}
         aria-hidden="true"
         className="w-full max-w-105 overflow-hidden rounded-2xl border border-zinc-800 bg-zinc-900/80 shadow-xl shadow-black/20 md:w-[320px] md:shrink-0 lg:w-105"
