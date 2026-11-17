@@ -8,6 +8,7 @@ import Highlights from './sections/Highlights/Highlights';
 import Learning from './sections/Learning/Learning';
 import ProfessionalExperience from './sections/ProfessionalExperience/ProfessionalExperience';
 import Footer from './components/Footer/Footer';
+import Reveal from './components/Reveal/Reveal';
 
 function App() {
   return (
@@ -15,13 +16,27 @@ function App() {
       <Header />
       <main className="flex-1">
         <Hero />
-        <About />
+        <Reveal>
+          <About />
+        </Reveal>
+        <Reveal>
         <Highlights />
-        <Stack />
-        <Building />
-        <ProfessionalExperience />
-        <Learning />
-        <Contact />
+        </Reveal>
+        <Reveal>
+          <Stack />
+        </Reveal>
+        <Reveal>
+          <Building />
+        </Reveal>
+        <Reveal>
+          <ProfessionalExperience />
+        </Reveal>
+        <Reveal>
+          <Learning />
+        </Reveal>
+        <Reveal>
+          <Contact />
+        </Reveal>
       </main>
       <Footer />
     </div>
