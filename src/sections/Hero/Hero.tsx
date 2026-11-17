@@ -2,8 +2,6 @@ import { FaLinkedin, FaGithub, FaMailBulk } from 'react-icons/fa';
 import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 
-import profile from '../../assets/images/profile.webp';
-
 // Hero section component that displays the main introduction, title, subtitle, and call-to-action buttons
 export default function Hero() {
   const { t } = useTranslation();
@@ -84,8 +82,12 @@ export default function Hero() {
         className="flex justify-center md:shrink-0"
       >
         <img
-          src={profile}
+          src="/images/profile-960.webp"
+          srcSet="/images/profile-640.webp 640w, /images/profile-960.webp 960w, /images/profile-1280.webp 1280w"
+          sizes="(min-width: 1024px) 420px, (min-width: 768px) 320px, 420px"
           alt={t('header.name')}
+          width={420}
+          height={420}
           loading="eager"
           fetchPriority="high"
           className="h-105 w-105 rounded-xl border border-zinc-800 object-cover md:h-80 md:w-80 lg:h-105 lg:w-105"
