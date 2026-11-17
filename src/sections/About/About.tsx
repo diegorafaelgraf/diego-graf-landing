@@ -39,7 +39,7 @@ export default function About() {
         width={420}
         height={420}
         loading="lazy"
-        className="aspect-square w-full max-w-[420px] rounded-xl border border-zinc-800 object-cover md:h-80 md:w-80 md:max-w-none lg:h-105 lg:w-105"
+        className="aspect-square w-full max-w-105 rounded-xl border border-zinc-800 object-cover md:h-80 md:w-80 md:max-w-none lg:h-105 lg:w-105"
       />
     </section>
   );

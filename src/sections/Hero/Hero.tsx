@@ -75,9 +75,12 @@ export default function Hero() {
         </div>
       </motion.div>
 
-      <div
+      <motion.div
+        initial={{ opacity: 0, y: 25 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6, delay: 0.15 }}
         aria-hidden="true"
-        className="w-full max-w-[420px] overflow-hidden rounded-2xl border border-zinc-800 bg-zinc-900/80 shadow-xl shadow-black/20 md:w-[320px] md:shrink-0 lg:w-[420px]"
+        className="w-full max-w-105 overflow-hidden rounded-2xl border border-zinc-800 bg-zinc-900/80 shadow-xl shadow-black/20 md:w-[320px] md:shrink-0 lg:w-105"
       >
         <div className="flex items-center gap-2 border-b border-zinc-800 px-5 py-4">
           <span className="h-2.5 w-2.5 rounded-full bg-red-400/80" />
@@ -167,7 +170,7 @@ export default function Hero() {
             READY TO BUILD
           </span>
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 }
