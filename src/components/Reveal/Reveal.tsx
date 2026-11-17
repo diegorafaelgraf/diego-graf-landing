@@ -1,4 +1,4 @@
-import { motion } from 'framer-motion';
+import { m } from 'framer-motion';
 
 interface RevealProps {
   children: React.ReactNode;
@@ -7,7 +7,7 @@ interface RevealProps {
 
 export default function Reveal({ children, delay = 0 }: RevealProps) {
   return (
-    <motion.div
+    <m.div
       initial={{ opacity: 0, y: 25 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, amount: 0.2 }}
@@ -18,6 +18,6 @@ export default function Reveal({ children, delay = 0 }: RevealProps) {
       }}
     >
       {children}
-    </motion.div>
+    </m.div>
   );
 }

@@ -1,4 +1,3 @@
-import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 
 export default function About() {
@@ -8,12 +7,7 @@ export default function About() {
       id="about"
       className="scroll-mt-0 mx-auto grid max-w-6xl items-center gap-12 px-6 py-32 md:grid-cols-[minmax(0,1fr)_auto]"
     >
-      <motion.div
-        initial={{ opacity: 0, y: 25 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        transition={{ duration: 0.5 }}
-      >
+      <div>
         <span className="text-blue-500 font-medium">
           {t('about.section')}
         </span>
@@ -30,7 +24,7 @@ export default function About() {
             </span>
           ))}
         </p>
-      </motion.div>
+      </div>
       <img
         src="/images/profile-960.webp"
         srcSet="/images/profile-640.webp 640w, /images/profile-960.webp 960w, /images/profile-1280.webp 1280w"
