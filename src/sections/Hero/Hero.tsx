@@ -75,24 +75,99 @@ export default function Hero() {
         </div>
       </motion.div>
 
-      <motion.div
-        initial={{ scale: 0.95 }}
-        animate={{ scale: 1 }}
-        transition={{ duration: 0.6, ease: "easeOut" }}
-        className="flex justify-center md:shrink-0"
+      <div
+        aria-hidden="true"
+        className="w-full max-w-[420px] overflow-hidden rounded-2xl border border-zinc-800 bg-zinc-900/80 shadow-xl shadow-black/20 md:w-[320px] md:shrink-0 lg:w-[420px]"
       >
-        <img
-          src="/images/profile-960.webp"
-          srcSet="/images/profile-640.webp 640w, /images/profile-960.webp 960w, /images/profile-1280.webp 1280w"
-          sizes="(min-width: 1024px) 420px, (min-width: 768px) 320px, 420px"
-          alt={t('header.name')}
-          width={420}
-          height={420}
-          loading="eager"
-          fetchPriority="high"
-          className="h-105 w-105 rounded-xl border border-zinc-800 object-cover md:h-80 md:w-80 lg:h-105 lg:w-105"
-        />
-      </motion.div>
+        <div className="flex items-center gap-2 border-b border-zinc-800 px-5 py-4">
+          <span className="h-2.5 w-2.5 rounded-full bg-red-400/80" />
+          <span className="h-2.5 w-2.5 rounded-full bg-yellow-400/80" />
+          <span className="h-2.5 w-2.5 rounded-full bg-emerald-400/80" />
+          <span className="ml-3 font-mono text-xs text-zinc-400">
+            developer.ts
+          </span>
+        </div>
+
+        <div className="overflow-x-auto px-5 py-5">
+          <div className="grid w-max min-w-full grid-cols-[2ch_auto] gap-x-4 font-mono text-[11px] leading-7 sm:text-xs">
+            <span className="select-none text-right text-zinc-600">01</span>
+            <span className="whitespace-nowrap text-zinc-300">
+              <span className="text-fuchsia-400">const</span>{' '}
+              <span className="text-sky-300">developer</span>{' '}
+              <span className="text-zinc-500">= {'{'}</span>
+            </span>
+
+            <span className="select-none text-right text-zinc-600">02</span>
+            <span className="whitespace-nowrap text-zinc-300">
+              {'  '}<span className="text-sky-300">name</span>
+              <span className="text-zinc-500">: </span>
+              <span className="text-emerald-300">'Diego Graf'</span>
+              <span className="text-zinc-500">,</span>
+            </span>
+
+            <span className="select-none text-right text-zinc-600">03</span>
+            <span className="whitespace-nowrap text-zinc-300">
+              {'  '}<span className="text-sky-300">role</span>
+              <span className="text-zinc-500">: </span>
+              <span className="text-emerald-300">'Software Developer'</span>
+              <span className="text-zinc-500">,</span>
+            </span>
+
+            <span className="select-none text-right text-zinc-600">04</span>
+            <span className="whitespace-nowrap text-zinc-300">
+              {'  '}<span className="text-sky-300">focus</span>
+              <span className="text-zinc-500">: [</span>
+            </span>
+
+            <span className="select-none text-right text-zinc-600">05</span>
+            <span className="whitespace-nowrap text-emerald-300">
+              {'    '}'software',
+            </span>
+
+            <span className="select-none text-right text-zinc-600">06</span>
+            <span className="whitespace-nowrap text-emerald-300">
+              {'    '}'automation',
+            </span>
+
+            <span className="select-none text-right text-zinc-600">07</span>
+            <span className="whitespace-nowrap text-emerald-300">
+              {'    '}'analytics',
+            </span>
+
+            <span className="select-none text-right text-zinc-600">08</span>
+            <span className="whitespace-nowrap text-zinc-300">
+              {'  '}<span className="text-zinc-500">],</span>
+            </span>
+
+            <span className="select-none text-right text-zinc-600">09</span>
+            <span className="whitespace-nowrap text-zinc-300">
+              {'  '}<span className="text-sky-300">approach</span>
+              <span className="text-zinc-500">: </span>
+              <span className="text-emerald-300">'build with purpose'</span>
+              <span className="text-zinc-500">,</span>
+            </span>
+
+            <span className="select-none text-right text-zinc-600">10</span>
+            <span className="whitespace-nowrap text-zinc-300">
+              <span className="text-zinc-500">{'}'} as const;</span>
+            </span>
+
+            <span className="select-none text-right text-zinc-600">11</span>
+            <span className="whitespace-nowrap text-zinc-300">
+              <span className="text-fuchsia-400">export default</span>{' '}
+              <span className="text-sky-300">developer</span>
+              <span className="text-zinc-500">;</span>
+            </span>
+          </div>
+        </div>
+
+        <div className="flex items-center gap-2 border-t border-zinc-800 px-5 py-3">
+          <span className="h-1.5 w-1.5 rounded-full bg-emerald-400" />
+          <span className="font-mono text-[10px] tracking-wide text-zinc-400">
+            READY TO BUILD
+          </span>
+        </div>
+      </div>
     </section>
   );
 }
