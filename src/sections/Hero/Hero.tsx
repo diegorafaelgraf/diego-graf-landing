@@ -1,5 +1,4 @@
 import { FaLinkedin, FaGithub, FaMailBulk } from 'react-icons/fa';
-import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 
 // Hero section component that displays the main introduction, title, subtitle, and call-to-action buttons
@@ -10,12 +9,7 @@ export default function Hero() {
       id="hero"
       className="scroll-mt-14.25 mx-auto flex min-h-[90vh] max-w-6xl flex-col items-center justify-center gap-12 px-6 pt-8 sm:scroll-mt-16.25 md:flex-row md:pt-8 lg:scroll-mt-18.25"
     >
-      <motion.div
-        initial={{ y: 25 }}
-        animate={{ y: 0 }}
-        transition={{ duration: 0.6, delay: 0.15 }}
-        className="w-full flex-1 md:w-auto"
-      >
+      <div>
         <span className="rounded-full border border-zinc-700 px-4 py-1 text-sm text-zinc-400">
           {t('hero.badge')}
         </span>
@@ -73,15 +67,9 @@ export default function Hero() {
             <FaMailBulk size={35} />
           </a>
         </div>
-      </motion.div>
+      </div>
 
-      <motion.div
-        initial={{ y: 25 }}
-        animate={{ y: 0 }}
-        transition={{ duration: 0.6, delay: 0.15 }}
-        aria-hidden="true"
-        className="w-full max-w-105 overflow-hidden rounded-2xl border border-zinc-800 bg-zinc-900/80 shadow-xl shadow-black/20 md:w-[320px] md:shrink-0 lg:w-105"
-      >
+      <div>
         <div className="flex items-center gap-2 border-b border-zinc-800 px-5 py-4">
           <span className="h-2.5 w-2.5 rounded-full bg-red-400/80" />
           <span className="h-2.5 w-2.5 rounded-full bg-yellow-400/80" />
@@ -170,7 +158,7 @@ export default function Hero() {
             READY TO BUILD
           </span>
         </div>
-      </motion.div>
+      </div>
     </section>
   );
 }
