@@ -17,13 +17,13 @@ function App() {
       <div className="min-h-screen flex flex-col bg-zinc-950 text-zinc-100">
         <Header />
         <main className="flex-1">
-          <Reveal><Hero /></Reveal>
+          <Reveal duration={0.15}><Hero /></Reveal>
           <Reveal><About /></Reveal>
           <Reveal><Highlights /></Reveal>
           <Reveal><Stack /></Reveal>
           <Reveal><Building /></Reveal>
           <Reveal><ProfessionalExperience /></Reveal>
-          <Reveal><Learning /></Reveal>
+          <Reveal amount={0.05}><Learning /></Reveal>
           <Reveal><Contact /></Reveal>
         </main>
         <Footer />
