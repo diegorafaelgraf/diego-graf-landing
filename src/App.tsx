@@ -1,3 +1,5 @@
+import { useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 import Header from './components/Header/Header';
 import Hero from './sections/Hero/Hero';
 import About from './sections/About/About';
@@ -12,6 +14,14 @@ import Reveal from './components/Reveal/Reveal';
 import { LazyMotion } from 'framer-motion';
 
 function App() {
+  const { t, i18n } = useTranslation();
+  const language = i18n.resolvedLanguage ?? i18n.language;
+
+  useEffect(() => {
+    document.title = t('meta.title');
+    document.documentElement.lang = language;
+  }, [language, t]);
+
   return (
     <LazyMotion features={loadFeatures}>
       <div className="min-h-screen flex flex-col bg-zinc-950 text-zinc-100">
