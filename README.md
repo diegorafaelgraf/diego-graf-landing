@@ -119,3 +119,11 @@ The site can be deployed to any static hosting service, such as:
 - Cloudflare Pages
 
 Publish the production build generated in the `dist` directory.
+
+## Releases
+
+Releases are managed by [Release Please](https://github.com/googleapis/release-please). When changes reach `main`, it opens or updates a release pull request based on Conventional Commit messages (`feat:`, `fix:`, etc.). Merge that release pull request to create the GitHub release and version tag.
+
+The initial release is pinned to `1.0.0` using `release-as` in `release-please-config.json`. Remove that option from the initial release pull request before merging it; subsequent releases will then be versioned from Conventional Commits. Regular pull requests are grouped into a release pull request rather than published immediately.
+
+In the repository settings, enable **Allow GitHub Actions to create and approve pull requests** under **Settings → Actions → General** so the workflow can open the release pull request.
