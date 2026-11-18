@@ -1,5 +1,14 @@
 # Changelog
 
+## [1.1.0](https://github.com/diegorafaelgraf/diego-graf-landing/compare/diego-portfolio-v1.0.0...diego-portfolio-v1.1.0) (2026-11-18)
+
+
+### Features
+
+* :sparkles: localize the document title ([5ca8b33](https://github.com/diegorafaelgraf/diego-graf-landing/commit/5ca8b339ccf6c48ae040be4fabd24622724227c5))
+* :sparkles: localize the document title ([5ca8b33](https://github.com/diegorafaelgraf/diego-graf-landing/commit/5ca8b339ccf6c48ae040be4fabd24622724227c5))
+* :sparkles: localize the document title ([ea0bb01](https://github.com/diegorafaelgraf/diego-graf-landing/commit/ea0bb01026aedb2c7fd55775bf29377a14d75886))
+
 ## 1.0.0 (2026-11-18)
 
 
