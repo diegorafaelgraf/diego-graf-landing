@@ -96,7 +96,7 @@ export default function Header() {
           </a>
 
           <div className="ml-auto flex items-center gap-3 lg:gap-6">
-            <nav className="hidden items-center gap-[30px] xl:flex 2xl:gap-8">
+            <nav className="hidden items-center gap-7.5 xl:flex 2xl:gap-8">
               {navItems.map((item) => {
                 const isActive = activeSection === item.id;
                 return (

@@ -7,7 +7,7 @@ export default function Contact() {
   return (
     <section
       id="contact"
-      className="scroll-mt-0 min-h-[calc(100vh-5rem)] mx-auto max-w-6xl px-6 py-32"
+      className="scroll-mt-0 mx-auto max-w-6xl px-6 pt-32 pb-92"
     >
       <span className="font-medium text-blue-500">
         {t('contact.section')}

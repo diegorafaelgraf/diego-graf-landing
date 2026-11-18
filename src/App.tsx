@@ -8,24 +8,30 @@ import Highlights from './sections/Highlights/Highlights';
 import Learning from './sections/Learning/Learning';
 import ProfessionalExperience from './sections/ProfessionalExperience/ProfessionalExperience';
 import Footer from './components/Footer/Footer';
+import Reveal from './components/Reveal/Reveal';
+import { LazyMotion } from 'framer-motion';
 
 function App() {
   return (
-    <div className="min-h-screen flex flex-col bg-zinc-950 text-zinc-100">
-      <Header />
-      <main className="flex-1">
-        <Hero />
-        <About />
-        <Highlights />
-        <Stack />
-        <Building />
-        <ProfessionalExperience />
-        <Learning />
-        <Contact />
-      </main>
-      <Footer />
-    </div>
+    <LazyMotion features={loadFeatures}>
+      <div className="min-h-screen flex flex-col bg-zinc-950 text-zinc-100">
+        <Header />
+        <main className="flex-1">
+          <Reveal duration={0.15}><Hero /></Reveal>
+          <Reveal><About /></Reveal>
+          <Reveal><Highlights /></Reveal>
+          <Reveal><Stack /></Reveal>
+          <Reveal><Building /></Reveal>
+          <Reveal><ProfessionalExperience /></Reveal>
+          <Reveal amount={0.05}><Learning /></Reveal>
+          <Reveal><Contact /></Reveal>
+        </main>
+        <Footer />
+      </div>
+    </LazyMotion>
   );
 }
+
+const loadFeatures = () => import('./features').then((res) => res.default);
 
 export default App;

@@ -14,14 +14,14 @@ export default function Footer() {
             <p className="text-sm font-medium text-zinc-200">
               {t('footer.credit')}
             </p>
-            <div className="mt-3 flex flex-wrap items-center gap-2">
-              <span className="mr-1 text-xs text-zinc-400">
-                {t('footer.builtWith')}
-              </span>
+            <p className="mt-3 text-xs text-zinc-400">
+              {t('footer.builtWith')}
+            </p>
+            <div className="mt-2 flex flex-wrap items-center gap-1.5">
               {technologies.map((technology) => (
                 <span
                   key={technology}
-                  className="rounded-full border border-zinc-800 bg-zinc-900/70 px-2.5 py-1 text-xs text-zinc-400"
+                  className="whitespace-nowrap rounded-full border border-zinc-800 bg-zinc-900/70 px-2 py-1 text-xs text-zinc-400"
                 >
                   {technology}
                 </span>
