@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.2.0](https://github.com/diegorafaelgraf/diego-graf-landing/compare/diego-portfolio-v1.1.0...diego-portfolio-v1.2.0) (2026-11-19)
+
+
+### Features
+
+* :lipstick: change favicon ([b4e6a7f](https://github.com/diegorafaelgraf/diego-graf-landing/commit/b4e6a7f01accc0a637c45bb7074a1ee4bc67f523))
+
+
+### Bug Fixes
+
+* :bug: mount certificate iframe only when is needed ([8024504](https://github.com/diegorafaelgraf/diego-graf-landing/commit/80245046957540fac93d3f0cd3c77d5ca2ca829f))
+
 ## [1.1.0](https://github.com/diegorafaelgraf/diego-graf-landing/compare/diego-portfolio-v1.0.0...diego-portfolio-v1.1.0) (2026-11-18)
 
 
