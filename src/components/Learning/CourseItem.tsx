@@ -219,11 +219,13 @@ export default function CourseItem({ course }: CourseItemProps) {
                             <ExternalLink size={16} aria-hidden="true" />
                           </a>
                         </div>
-                        <iframe
-                          src={course.certificate}
-                          title={t('learning.certificate.frameTitle', { title: course.title })}
-                          className="hidden h-full w-full border-0 bg-white lg:block"
-                        />
+                        {isCertificateOpen && (
+                          <iframe
+                            src={course.certificate}
+                            title={t('learning.certificate.frameTitle', { title: course.title })}
+                            className="hidden h-full w-full border-0 bg-white lg:block"
+                          />
+                        )}
                       </>
                     )}
                   </div>
