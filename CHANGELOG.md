@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.2.1](https://github.com/diegorafaelgraf/diego-graf-landing/compare/diego-portfolio-v1.2.0...diego-portfolio-v1.2.1) (2026-11-20)
+
+
+### Bug Fixes
+
+* :bug: i18n issue fixed ([570900b](https://github.com/diegorafaelgraf/diego-graf-landing/commit/570900bbb2c421850daf13c7c6947d648595cf21))
+* :bug: i18n issue fixed ([8dd4a59](https://github.com/diegorafaelgraf/diego-graf-landing/commit/8dd4a593e152cebb5c208b4760a2bc2bfc49debc))
+
 ## [1.2.0](https://github.com/diegorafaelgraf/diego-graf-landing/compare/diego-portfolio-v1.1.0...diego-portfolio-v1.2.0) (2026-11-19)
 
 
