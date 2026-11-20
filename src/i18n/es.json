@@ -213,10 +213,10 @@
         "description": "Aplicación móvil Android para comparar plazos fijos en diferentes bancos.",
         "status": "Desarrollo activo del backend"
       },
-      "bassLearning": {
-        "title": "Bass Learning",
-        "description": "Aplicación móvil Android para aprender a tocar el bajo eléctrico mediante lecciones interactivas y ejercicios prácticos.",
-        "status": "Desarrollo activo"
+      "bassLearningPlatform": {
+        "title": "Bass Learning Platform",
+        "description": "Plataforma interactiva para aprender y practicar técnicas de bajo.",
+        "status": "Planificación"
       },
       "personalFinanceApp": {
         "title": "Personal Finance App",
