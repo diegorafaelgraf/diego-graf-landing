@@ -9,6 +9,7 @@ import Contact from './sections/Contact/Contact';
 import Highlights from './sections/Highlights/Highlights';
 import Learning from './sections/Learning/Learning';
 import ProfessionalExperience from './sections/ProfessionalExperience/ProfessionalExperience';
+import Education from './sections/Education/Education';
 import Footer from './components/Footer/Footer';
 import Reveal from './components/Reveal/Reveal';
 import { LazyMotion } from 'framer-motion';
@@ -33,6 +34,7 @@ function App() {
           <Reveal><Stack /></Reveal>
           <Reveal><Building /></Reveal>
           <Reveal><ProfessionalExperience /></Reveal>
+          <Reveal><Education /></Reveal>
           <Reveal amount={0.05}><Learning /></Reveal>
           <Reveal><Contact /></Reveal>
         </main>

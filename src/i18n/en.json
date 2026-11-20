@@ -13,7 +13,8 @@
     "stack": "Stack",
     "building": "Building",
     "learning": "Learning",
-    "professionalExperience": "Experience"
+    "professionalExperience": "Experience",
+    "education": "Education"
   },
   "hero": {
     "badge": "Available for freelance projects",
@@ -230,6 +231,24 @@
       }
     }
   },
+  "education": {
+    "section": "ACADEMIC BACKGROUND",
+    "title": "Education",
+    "items": {
+      "systemsAnalyst": {
+        "degree": "Systems Analyst",
+        "period": "2001–2005",
+        "institution": "Facultad de Ciencia y Tecnología, Universidad Autónoma de Entre Ríos (UADER)",
+        "description": "Training focused on the analysis, design, and development of information systems, with special emphasis on problem-solving, process analysis, and applying technological solutions."
+      },
+      "informationSystems": {
+        "degree": "Bachelor's Degree in Information Systems",
+        "period": "2001–2007",
+        "institution": "Facultad de Ciencia y Tecnología, Universidad Autónoma de Entre Ríos (UADER)",
+        "description": "University-level education focused on managing, planning, and developing IT solutions, integrating knowledge of technology, software engineering, and information systems management."
+      }
+    }
+  },
   "learning": {
     "section": "CURRENTLY LEARNING",
     "title": "Continuous learning.",
@@ -400,6 +419,10 @@
       "openEnglish": {
         "title": "Open English",
         "description": "I am currently taking Open English, a program for learning English that allows me to improve my communication skills in this language. Through online classes, interactive exercises, and conversation practice, I am strengthening my listening comprehension, oral expression, reading, and writing skills in English. \n\nThe program offers me the opportunity to learn at my own pace, adapting the content to my needs and specific goals. Additionally, I am participating in activities that encourage the practice of the language in real-world contexts, which helps me gain confidence and fluency in communication. \n\nThis training will allow me to expand my linguistic competencies, facilitating interaction with people from different cultures and improving my professional opportunities in international environments."
+      },
+      "digitalMarketingWithIA":{
+        "title": "AI-Powered Digital Marketing",
+        "description":"In this course, I learned how to use AI as a practical tool for social media marketing. It focused on designing digital strategies, creating content, and building a brand identity, using AI tools to optimize time, improve processes, and expand creative possibilities."
       }
     }
   },

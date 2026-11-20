@@ -331,6 +331,13 @@ const learning: LearningItem[] = [
     provider: 'Claude Academy',
     progress: 7
   },
+  // Digital Marketing With IA
+  {
+    type: 'course',
+    id: 'digitalMarketingWithIA',
+    provider: 'Municipalidad de Crespo',
+    progress: 100
+  }
 ];
 
 export const learnings = learning.map((item) => ({

@@ -13,7 +13,8 @@
     "stack": "Stack",
     "building": "Construyendo",
     "learning": "Aprendizaje",
-    "professionalExperience": "Experiencia"
+    "professionalExperience": "Experiencia",
+    "education": "Educación"
   },
   "hero": {
     "badge": "Disponible para proyectos freelance",
@@ -230,6 +231,24 @@
       }
     }
   },
+  "education": {
+    "section": "FORMACIÓN ACADÉMICA",
+    "title": "Educación",
+    "items": {
+      "systemsAnalyst": {
+        "degree": "Analista de Sistemas",
+        "period": "2001–2005",
+        "institution": "Facultad de Ciencia y Tecnología, Universidad Autónoma de Entre Ríos (UADER)",
+        "description": "Formación orientada al análisis, diseño y desarrollo de sistemas de información, con especial énfasis en la resolución de problemas, el análisis de procesos y la aplicación de soluciones tecnológicas."
+      },
+      "informationSystems": {
+        "degree": "Licenciatura en Sistemas de Información",
+        "period": "2001–2007",
+        "institution": "Facultad de Ciencia y Tecnología, Universidad Autónoma de Entre Ríos (UADER)",
+        "description": "Formación universitaria orientada a la gestión, planificación y desarrollo de soluciones informáticas, integrando conocimientos de tecnología, ingeniería de software y gestión de sistemas de información."
+      }
+    }
+  },
   "learning": {
     "section": "APRENDIZAJE ACTUAL",
     "title": "Aprendizaje continuo.",
@@ -362,7 +381,7 @@
       },
       "level10":{
         "description":"Perfeccionaré mi capacidad para presentar, defender y refinar ideas de manera eficaz, adaptando mi lenguaje, tono y estilo a diferentes audiencias y objetivos profesionales."
-      }
+      }      
     },
     "items": {      
       "googleDataAnalytics": {
@@ -400,6 +419,10 @@
       "openEnglish": {
         "title": "Open English",
         "description": "Actualmente estoy cursando Open English, un programa de aprendizaje de inglés que me permite mejorar mis habilidades de comunicación en este idioma. A través de clases en línea, ejercicios interactivos y prácticas de conversación, estoy fortaleciendo mi comprensión auditiva, expresión oral, lectura y escritura en inglés. \n\nEl programa me ofrece la oportunidad de aprender a mi propio ritmo, adaptando el contenido a mis necesidades y objetivos específicos. Además, estoy participando en actividades que fomentan la práctica del idioma en contextos reales, lo que me ayuda a ganar confianza y fluidez en la comunicación. \n\nEsta formación me permitirá ampliar mis competencias lingüísticas, facilitando la interacción con personas de diferentes culturas y mejorando mis oportunidades profesionales en entornos internacionales."
+      },
+      "digitalMarketingWithIA": {
+        "title": "AI-Powered Digital Marketing",
+        "description": "En este curso incorporé conocimientos en la utilización de la IA como recurso aplicado al marketing en redes sociales. El eje central del curso se orientó al diseño de estrategias digitales, la producción de contenidos y la construcción de una identidad de marca, utilizando herramientas de IA para optimizar tiempos, mejorar procesos y ampliar las posibilidades creativas."
       }
     }
   },

@@ -11,6 +11,7 @@ const navItems = [
   { id: 'stack', labelKey: 'nav.stack' },
   { id: 'building', labelKey: 'nav.building' },
   { id: 'professional-experience', labelKey: 'nav.professionalExperience' },
+  { id: 'education', labelKey: 'nav.education' },
   { id: 'learning', labelKey: 'nav.learning' },
   { id: 'contact', labelKey: 'nav.contact' },
 ];
@@ -89,29 +90,29 @@ export default function Header() {
   // Return the header component with navigation links, language switcher, and mobile menu
   return (    
     <header className="sticky top-0 z-50 w-full border-b border-zinc-800 bg-zinc-950/95 lg:bg-zinc-950/80 lg:backdrop-blur">
-      <div className="max-w-6xl px-7 mr-2 ml-0 sm:px-4">
-        <div className="flex items-center justify-between gap-4 py-2">
+      <div className="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="flex items-center justify-between gap-4 py-2 xl:grid xl:grid-cols-[auto_minmax(0,1fr)_auto]">
           <a href="#hero" className="flex shrink-0 items-center" aria-label={t('header.name')}>
             <img src={logo} alt={t('header.name')} className="h-7 w-42 sm:w-52 sm:h-12 lg:h-14 lg:w-56 rounded-md object-contain" />
           </a>
 
-          <div className="ml-auto flex items-center gap-3 lg:gap-6">
-            <nav className="hidden items-center gap-7.5 xl:flex 2xl:gap-8">
-              {navItems.map((item) => {
-                const isActive = activeSection === item.id;
-                return (
-                  <a
-                    key={item.id}
-                    href={`#${item.id}`}
-                    className={`${styles.link} ${isActive ? styles.activeLink : ''} whitespace-nowrap`}
-                    aria-current={isActive ? 'page' : undefined}
-                  >
-                    {t(item.labelKey)}
-                  </a>
-                );
-              })}
-            </nav>
+          <nav className="hidden items-center gap-6 xl:flex xl:translate-x-4 xl:justify-self-center">
+            {navItems.map((item) => {
+              const isActive = activeSection === item.id;
+              return (
+                <a
+                  key={item.id}
+                  href={`#${item.id}`}
+                  className={`${styles.link} ${isActive ? styles.activeLink : ''} whitespace-nowrap`}
+                  aria-current={isActive ? 'page' : undefined}
+                >
+                  {t(item.labelKey)}
+                </a>
+              );
+            })}
+          </nav>
 
+          <div className="ml-auto flex items-center gap-3 lg:gap-6 xl:ml-0">
             <div className="flex items-center gap-2 rounded-full border border-zinc-800 bg-zinc-900/60 px-2 py-1">
               <button onClick={() => handleLanguageChange('en')} className="text-md font-medium text-zinc-400 transition hover:text-white">EN</button>
               <span className="text-zinc-600">|</span>
