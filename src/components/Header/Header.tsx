@@ -11,6 +11,7 @@ const navItems = [
   { id: 'stack', labelKey: 'nav.stack' },
   { id: 'building', labelKey: 'nav.building' },
   { id: 'professional-experience', labelKey: 'nav.professionalExperience' },
+  { id: 'education', labelKey: 'nav.education' },
   { id: 'learning', labelKey: 'nav.learning' },
   { id: 'contact', labelKey: 'nav.contact' },
 ];

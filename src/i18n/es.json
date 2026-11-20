@@ -13,7 +13,8 @@
     "stack": "Stack",
     "building": "Construyendo",
     "learning": "Aprendizaje",
-    "professionalExperience": "Experiencia"
+    "professionalExperience": "Experiencia",
+    "education": "Educación"
   },
   "hero": {
     "badge": "Disponible para proyectos freelance",
@@ -227,6 +228,24 @@
         "title": "La Patada Landing Page",
         "description": "Página web para la banda de rock La Patada.",
         "status": "Planificación"
+      }
+    }
+  },
+  "education": {
+    "section": "FORMACIÓN ACADÉMICA",
+    "title": "Educación",
+    "items": {
+      "systemsAnalyst": {
+        "degree": "Analista de Sistemas",
+        "period": "2001–2005",
+        "institution": "Facultad de Ciencia y Tecnología, Universidad Autónoma de Entre Ríos (UADER)",
+        "description": "Formación orientada al análisis, diseño y desarrollo de sistemas de información, con especial énfasis en la resolución de problemas, el análisis de procesos y la aplicación de soluciones tecnológicas."
+      },
+      "informationSystems": {
+        "degree": "Licenciatura en Sistemas de Información",
+        "period": "2001–2007",
+        "institution": "Facultad de Ciencia y Tecnología, Universidad Autónoma de Entre Ríos (UADER)",
+        "description": "Formación universitaria orientada a la gestión, planificación y desarrollo de soluciones informáticas, integrando conocimientos de tecnología, ingeniería de software y gestión de sistemas de información."
       }
     }
   },

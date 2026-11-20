@@ -13,7 +13,8 @@
     "stack": "Stack",
     "building": "Building",
     "learning": "Learning",
-    "professionalExperience": "Experience"
+    "professionalExperience": "Experience",
+    "education": "Education"
   },
   "hero": {
     "badge": "Available for freelance projects",
@@ -227,6 +228,24 @@
         "title": "La Patada Landing Page",
         "description": "Landing page for the La Patada rock band.",
         "status": "Planning"
+      }
+    }
+  },
+  "education": {
+    "section": "ACADEMIC BACKGROUND",
+    "title": "Education",
+    "items": {
+      "systemsAnalyst": {
+        "degree": "Systems Analyst",
+        "period": "2001–2005",
+        "institution": "Facultad de Ciencia y Tecnología, Universidad Autónoma de Entre Ríos (UADER)",
+        "description": "Training focused on the analysis, design, and development of information systems, with special emphasis on problem-solving, process analysis, and applying technological solutions."
+      },
+      "informationSystems": {
+        "degree": "Bachelor's Degree in Information Systems",
+        "period": "2001–2007",
+        "institution": "Facultad de Ciencia y Tecnología, Universidad Autónoma de Entre Ríos (UADER)",
+        "description": "University-level education focused on managing, planning, and developing IT solutions, integrating knowledge of technology, software engineering, and information systems management."
       }
     }
   },
