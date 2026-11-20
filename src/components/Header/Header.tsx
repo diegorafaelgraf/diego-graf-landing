@@ -96,7 +96,7 @@ export default function Header() {
             <img src={logo} alt={t('header.name')} className="h-7 w-42 sm:w-52 sm:h-12 lg:h-14 lg:w-56 rounded-md object-contain" />
           </a>
 
-          <nav className="hidden items-center gap-7.5 xl:flex xl:justify-self-center 2xl:gap-8">
+          <nav className="hidden items-center gap-6 xl:flex xl:translate-x-4 xl:justify-self-center">
             {navItems.map((item) => {
               const isActive = activeSection === item.id;
               return (
