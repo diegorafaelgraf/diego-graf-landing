@@ -362,7 +362,7 @@
       },
       "level10":{
         "description":"Perfeccionaré mi capacidad para presentar, defender y refinar ideas de manera eficaz, adaptando mi lenguaje, tono y estilo a diferentes audiencias y objetivos profesionales."
-      }
+      }      
     },
     "items": {      
       "googleDataAnalytics": {
@@ -400,6 +400,10 @@
       "openEnglish": {
         "title": "Open English",
         "description": "Actualmente estoy cursando Open English, un programa de aprendizaje de inglés que me permite mejorar mis habilidades de comunicación en este idioma. A través de clases en línea, ejercicios interactivos y prácticas de conversación, estoy fortaleciendo mi comprensión auditiva, expresión oral, lectura y escritura en inglés. \n\nEl programa me ofrece la oportunidad de aprender a mi propio ritmo, adaptando el contenido a mis necesidades y objetivos específicos. Además, estoy participando en actividades que fomentan la práctica del idioma en contextos reales, lo que me ayuda a ganar confianza y fluidez en la comunicación. \n\nEsta formación me permitirá ampliar mis competencias lingüísticas, facilitando la interacción con personas de diferentes culturas y mejorando mis oportunidades profesionales en entornos internacionales."
+      },
+      "digitalMarketingWithIA": {
+        "title": "AI-Powered Digital Marketing",
+        "description": "En este curso incorporé conocimientos en la utilización de la IA como recurso aplicado al marketing en redes sociales. El eje central del curso se orientó al diseño de estrategias digitales, la producción de contenidos y la construcción de una identidad de marca, utilizando herramientas de IA para optimizar tiempos, mejorar procesos y ampliar las posibilidades creativas."
       }
     }
   },
