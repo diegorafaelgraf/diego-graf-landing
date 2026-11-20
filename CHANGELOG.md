@@ -1,5 +1,15 @@
 # Changelog
 
+## [1.3.0](https://github.com/diegorafaelgraf/diego-graf-landing/compare/diego-portfolio-v1.2.2...diego-portfolio-v1.3.0) (2026-11-20)
+
+
+### Features
+
+* :sparkles: add a new course ([67aba8b](https://github.com/diegorafaelgraf/diego-graf-landing/commit/67aba8bff11dac08ceb09a50b7899f00b28cdf6f))
+* :sparkles: add Education section ([6eb8197](https://github.com/diegorafaelgraf/diego-graf-landing/commit/6eb8197478e082e9b114ba2c496f48d79f4b48c7))
+* :sparkles: improve header ([eed11e2](https://github.com/diegorafaelgraf/diego-graf-landing/commit/eed11e263bb7137a4875ef80d43fb455a49d26ec))
+* :sparkles: improve header ([c361dfc](https://github.com/diegorafaelgraf/diego-graf-landing/commit/c361dfc9050365439e2c7d19f13206a8a542b29e))
+
 ## [1.2.2](https://github.com/diegorafaelgraf/diego-graf-landing/compare/diego-portfolio-v1.2.1...diego-portfolio-v1.2.2) (2026-11-20)
 
 
