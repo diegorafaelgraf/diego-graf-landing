@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.2.2](https://github.com/diegorafaelgraf/diego-graf-landing/compare/diego-portfolio-v1.2.1...diego-portfolio-v1.2.2) (2026-11-20)
+
+
+### Bug Fixes
+
+* :lipstick: improve favicon size ([1660e53](https://github.com/diegorafaelgraf/diego-graf-landing/commit/1660e53da210246f71e56837aedf91bd6e1055c4))
+* :lipstick: improve favicon size ([6ea86ff](https://github.com/diegorafaelgraf/diego-graf-landing/commit/6ea86ff9a7903c7d4a4f144a9481e9044f114448))
+
 ## [1.2.1](https://github.com/diegorafaelgraf/diego-graf-landing/compare/diego-portfolio-v1.2.0...diego-portfolio-v1.2.1) (2026-11-20)
 
 
